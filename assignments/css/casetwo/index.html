@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/font-awsome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+         header{
+             background: white;
+             box-shadow: 4px 1px 4px 0px #0000005c;
+             position: relative;
+         }
+
+         header>img{
+             width: 200px;
+             margin: 20px;
+         }
+
+         header>nav>ul {
+             position: absolute;
+             margin-left:20px ;
+             margin-right:10px ;
+             right: 30px;
+             bottom: 0;
+             font-size: 21px;
+             list-style: none;
+             font-family: 'Playfair Display', serif;
+         }
+
+         header>nav>ul>li {
+              display: inline-block;
+             padding:  0 10px 0 10px;
+         }
+
+         header>nav>ul>li>i{
+             color: red;
+             font-size: 20px;
+             margin-right: 5px;
+         }
+
+         header>nav>ul>li>a {
+            text-decoration: none;
+             color: black;
+         }
+
+         footer{
+             height: 100px;
+             background: gray;
+         }
+         footer>p{
+             font-weight: bold;
+             text-align: center;
+             padding-top: 10px;
+             color: white;
+             margin-top: 0;
+         }
+
+         body>main{
+             position: relative;
+         }
+
+         body>main>nav{
+             position: absolute;
+             width: 300px;
+             background: blueviolet;
+             top:0;
+             bottom: 0;
+         }
+
+         body>main>nav>ul{
+             font-size: 21px;
+             margin-top:40px ;
+             margin-bottom:40px ;
+             list-style: none;
+         }
+
+         body>main>nav>ul>li{
+             color: white;
+             margin-bottom: 15px;
+         }
+
+         body>main>nav>ul>li>i{
+             color: white;
+             font-size: 20px;
+             margin-right: 5px;
+             margin-left: 5px;
+         }
+
+         body>main>nav>ul>li>a {
+             text-decoration: none;
+             color: white;
+         }
+
+
+         body>main>section{
+             margin-left: 300px;
+             padding: 10px;
+         }
+
+         body>main>section>section{
+             border: 2px solid black;
+             height: 300px;
+             position: relative;
+         }
+
+         body>main>section>p {
+             font-family: 'Dancing Script', cursive;
+         }
+
+         body>main>section>section>div{
+             height: 100%;
+             width: calc(100%/3);
+             position: absolute;
+             background: url("image/monkey.jpg");
+             background-size: cover;
+             background-position: center;
+         }
+
+         body>main>section>section>div:nth-child(1){
+             left: 0;
+         }
+         body>main>section>section>div:nth-child(2){
+             /*left: 0;*/
+             /*right: 0;*/
+             /*margin: auto;*/
+                   /*or*/
+             left:calc(100%/3);
+         }
+         body>main>section>section>div:nth-child(3){
+             right: 0;
+         }
+
+    </style>
+</head>
+<body>
+<header>
+        <img src="image/ijse.png" alt="logo">
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+            <li><i class="fa-sharp fa-solid fa-globe"></i><a href="#">Service</a></li>
+            <li><i class="fa-solid fa-id-badge"></i><a href="#">Contact</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#">About us</a></li>
+        </ul>
+    </nav>
+</header>
+ <main>
+         <nav>
+             <ul>
+                 <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+                 <li><i class="fa-sharp fa-solid fa-globe"></i><a href="#">Service</a></li>
+                 <li><i class="fa-solid fa-id-badge"></i><a href="#">Contact</a></li>
+                 <li><i class="fa-solid fa-address-card"></i><a href="#">About us</a></li>
+             </ul>
+         </nav>
+ <section>
+         <section>
+             <div></div>
+             <div></div>
+             <div></div>
+         </section>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <section>
+             <div></div>
+             <div></div>
+             <div></div>
+         </section>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet atque, aut dolores ducimus est id ipsum
+             nihil perferendis, praesentium quo quod rerum sint soluta suscipit tempora temporibus unde, vel.</p>
+ </section>
+ </main>
+<footer>
+    <p>Download by IJSE &copy;</p>
+</footer>
+</body>
+</html>
