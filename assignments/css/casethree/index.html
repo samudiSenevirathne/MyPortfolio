@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <meta view="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+
+      main>section{
+          /*width: 100vw;*/
+          height: 100vh;
+          position: relative;
+      }
+
+   main>section>div{
+       width: 216px;
+       height: 226px;
+        border-radius: 100%;
+        position: absolute;
+        left:0;
+        right: 0;
+        bottom: 0;
+        top:0;
+        margin: auto;
+       text-align:center;
+       color: white;
+       font-size: 20px;
+       font-family: 'Playfair Display', serif;
+    }
+
+      main>section:nth-child(1)>div {
+          background: mediumpurple;
+      }
+      main>section:nth-child(1)>div>p{
+          margin-top: 87px;
+      }
+      main>section:nth-child(2)>div {
+          background: dodgerblue;
+      }
+      main>section:nth-child(2)>div>p{
+          margin-top: 87px;
+      }
+      main>section:nth-child(3)>div {
+          background: indianred;
+      }
+      main>section:nth-child(3)>div>p{
+          margin-top: 60px;
+      }
+
+      main>section>div>div{
+          width: 200px;
+          height: 200px;
+          border-radius: 100%;
+          position: fixed;
+          border: 12px solid red;
+          left:0;
+          right: 0;
+          bottom: 0;
+          top:0;
+          margin: auto;
+          z-index: 2;
+      }
+
+      main>section>div>div>div{
+          width: 224px;
+          height: 224px;
+          border-radius: 100%;
+          position: fixed;
+          border: 15px solid gray;
+          left:0;
+          right: 0;
+          bottom: 0;
+          top:0;
+          margin: auto;
+          z-index: 3;
+      }
+
+  </style>
+</head>
+
+<body>
+<main>
+    <section>
+  <div>
+      <p>Hello</p>
+      <div>
+          <div>
+
+          </div>
+      </div>
+  </div>
+    </section>
+    <section>
+        <div>
+            <p>Welcome To</p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <p>Institute<br>of<br>Software<br>Engineering</p>
+        </div>
+    </section>
+</main>
+</body>
+</html>
