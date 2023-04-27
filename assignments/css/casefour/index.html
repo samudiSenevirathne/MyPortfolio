@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+<!--    <meta view="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+  <style>
+
+      main>section{
+          height: 100vh;
+      }
+
+      main>section>section{
+          width: 1349px;
+          height: 80px;
+          position: sticky;
+          top:0;
+          z-index: 3;
+      }
+
+      main>section>section>p {
+        font-weight: bold;
+          font-size: 20px;
+          color: white;
+            margin-top: 0px;
+          padding-top: 17px;
+          }
+
+      #secOne>section{
+         background: red;
+      }
+
+      main>section:nth-child(2)>section{
+         background: midnightblue;
+      }
+
+      main>section:nth-child(3)>section{
+         background: black;
+      }
+
+      main>section:nth-child(4)>section{
+         background: brown;
+      }
+
+      main>section>section>section{
+          width: 1349px;
+          height: 600px;
+          z-index: 1;
+      }
+
+      main>section>section>section>p{
+          font-weight: bold;
+          font-size: 100px;
+          margin-top: 0px;
+          text-align:center;
+          padding-top: 250px;
+      }
+
+      main>section:nth-child(1)>section>section{
+          background: white;
+      }
+      main>section:nth-child(2)>section>section{
+          background: steelblue;
+      }
+      main>section:nth-child(3)>section>section{
+          background: grey;
+      }
+      main>section:nth-child(4)>section>section{
+          background: indianred;
+      }
+
+
+  </style>
+</head>
+<body>
+<main>
+<section id="secOne"><section><p>Card 1</p><section><p>Hello</p></section></section></section>
+<section><section><p>Card 2</p><section><p>How</p></section></section></section>
+<section><section><p>Card 3</p><section><p>Are</p></section></section></section>
+<section><section><p>Card 4</p><section><p>You..?</p></section></section></section>
+</main>
+</body>
+</html>
