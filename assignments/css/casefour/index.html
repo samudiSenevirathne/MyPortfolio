@@ -2,83 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment 4</title>
-<!--    <meta view="viewport" content="width=device-width, initial-scale=1">-->
+    <title>Assignment-04</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
-  <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body>main>section{
+            position: relative;
+            height: 100vh;
+        }
+        body>main>section>div{
+            position: sticky;
+            height: 70px;
+            top: 0;
 
-      main>section{
-          height: 100vh;
-      }
+        }
+        body>main>section>div>p{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            padding-left: 9px;
+            padding-top: 21px;
+            margin-top: 0;
+        }
+        body>main>section>aside{
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            font-size: 99px;
+            text-align: center;
+            margin-top: 240px;
+        }
+        body>main>section:nth-child(1){
+            background-color: white;
+        }
+        body>main>section:nth-child(2){
+            background: steelblue;
+        }
+        body>main>section:nth-child(3){
+            background: grey;
+        }
+        body>main>section:nth-child(4){
+            background: indianred;
+        }
+        body>main>section:nth-child(1)>div{
+            background-color: brown;
+        }
+        body>main>section:nth-child(2)>div{
+            background-color: midnightblue;
+        }
+        body>main>section:nth-child(3)>div{
+            background-color: black;
+        }
+        body>main>section:nth-child(4)>div{
+            background-color: red;
+        }
 
-      main>section>section{
-          width: 1349px;
-          height: 80px;
-          position: sticky;
-          top:0;
-          z-index: 3;
-      }
-
-      main>section>section>p {
-        font-weight: bold;
-          font-size: 20px;
-          color: white;
-            margin-top: 0px;
-          padding-top: 17px;
-          }
-
-      #secOne>section{
-         background: red;
-      }
-
-      main>section:nth-child(2)>section{
-         background: midnightblue;
-      }
-
-      main>section:nth-child(3)>section{
-         background: black;
-      }
-
-      main>section:nth-child(4)>section{
-         background: brown;
-      }
-
-      main>section>section>section{
-          width: 1349px;
-          height: 600px;
-          z-index: 1;
-      }
-
-      main>section>section>section>p{
-          font-weight: bold;
-          font-size: 100px;
-          margin-top: 0px;
-          text-align:center;
-          padding-top: 250px;
-      }
-
-      main>section:nth-child(1)>section>section{
-          background: white;
-      }
-      main>section:nth-child(2)>section>section{
-          background: steelblue;
-      }
-      main>section:nth-child(3)>section>section{
-          background: grey;
-      }
-      main>section:nth-child(4)>section>section{
-          background: indianred;
-      }
-
-
-  </style>
+    </style>
 </head>
 <body>
 <main>
-<section id="secOne"><section><p>Card 1</p><section><p>Hello</p></section></section></section>
-<section><section><p>Card 2</p><section><p>How</p></section></section></section>
-<section><section><p>Card 3</p><section><p>Are</p></section></section></section>
-<section><section><p>Card 4</p><section><p>You..?</p></section></section></section>
+    <section>
+        <div>
+            <p>Card 1</p>
+        </div>
+        <aside>
+            <p>Hello</p>
+        </aside>
+    </section>
+    <section>
+        <div>
+            <p>Card 2</p>
+        </div>
+        <aside>
+            <p>How</p>
+        </aside>
+    </section>
+    <section>
+        <div>
+            <p>Card 3</p>
+        </div>
+        <aside>
+            <p>Are</p>
+        </aside>
+    </section>
+    <section>
+        <div>
+            <p>Card 4</p>
+        </div>
+        <aside>
+            <p>You..!</p>
+        </aside>
+    </section>
 </main>
 </body>
 </html>
