@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Assignment-04</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+
+        div{
+            width: 50px;
+            height: 50px;
+            border :1px solid red;
+            position:absolute;
+            right: 0;
+            left: 0;
+            top:0;
+            bottom:0;
+            margin: auto;
+            border-radius: 100%;
+            animation:testOne;
+            animation-duration: 3s;
+            animation-iteration-count:infinite;
+        }
+
+        @keyframes testOne {
+            from{
+                width: 50px;
+                height: 50px;
+            }
+            to{
+                width: 300px;
+                height: 300px;
+                background:red;
+                opacity: 0.2%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<div></div>
+</body>
+</html>
