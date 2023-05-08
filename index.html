@@ -12,12 +12,116 @@
             <meta name="theme-color" content="#192a56">
             <meta name="viewport" content="width=device-width initial-scale=1 minimum-scale=2 maximum-scale=10">
             <link rel="icon" href="icons8-geography-16.png">
+
+            <link rel="stylesheet" href="assets/css/normalize.css">
+            <link rel="stylesheet" href="assets/font-awsome/css/all.min.css">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
         <style>
+
+            ::-webkit-scrollbar {
+                width: 0;
+            }
+
+            body{
+                width: 100vw;
+                height: calc(100vh * 9);
+                /*background:linear-gradient(to left bottom, #ffffff,#00A8FF,#0768AE,#ffffff,#192A56,#6D84C2);*/
+                background: url("assets/image/MY Mock-Up Images/new/Correct-Graint.png");
+                background-size:cover;
+                background-position: center;
+            }
+
+            main{
+                position: relative;
+                width: 100vw;
+                height: calc((100vh * 9) - 10vh);
+            }
+
+            main>section{
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            main>section>section{
+                position: absolute;
+                top:0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                /*height: 500px;*/
+                height: 520px;
+                width: 1200px;
+                background: #24144C;
+                box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            main>section:nth-child(1){
+                height: calc(100vh - 10vh);
+            }
+
+            header{
+                height: 10vh;
+                position: relative;
+                font-size: 20px;
+                font-family: 'Cinzel', serif;
+            }
+
+            header>h2{
+                position: absolute;
+                margin-top: 0;
+                margin-bottom: 0;
+                left: 30px;
+                top: 35px;
+                color: #24144C;
+            }
+
+            header>nav>menu {
+                position: absolute;
+                margin-left:20px ;
+                margin-right:40px ;
+                right: 30px;
+                top: 2px;
+                font-size: 30px;
+                list-style: none;
+                font-family: 'Dancing Script', cursive;
+                z-index: 2;
+            }
+
+            header>nav>menu>li {
+                display: inline-block;
+                padding:  0 10px 0 10px;
+            }
+
+            header>nav>menu>li>a {
+                text-decoration: none;
+                color: #24144C;
+            }
+            header>div{
+                position: relative;
+                height: 50px;
+                width: 100px;
+                left: 300px;
+                top: 25px;
+                z-index: 1;
+                border-radius: 25px 25px 0 25px ;
+                background:#00A8FF ;
+            }
 
 
 
 
         </style>
+
     </head>       
 
     <body>
