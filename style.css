@@ -409,6 +409,18 @@ main>section:nth-child(1)>aside>div:nth-child(2){
     transform: rotate(90deg);
 }
 
+main>section:nth-child(1)>aside>a>img{ /*new Animation*/
+    animation: Myscale;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes Myscale {     /*new Animation*/
+    50%{
+        transform: scale(0.5,0.5);
+    }
+}
+
 main>section:nth-child(1)>aside>a:nth-child(3)>img{
     position: absolute;
     height: 20px;
@@ -432,6 +444,7 @@ main>section:nth-child(1)>aside>a:nth-child(5)>img{
     left: 1316px;
     top: 386px;
 }
+
 main>section:nth-child(1)>aside>a:nth-child(6)>img{
     position: absolute;
     height: 20px;
@@ -753,6 +766,11 @@ main>section:nth-child(2)>section>aside:nth-child(2)>div:nth-child(6){
     bottom:590px;
     background: #FFFFFF;
     border-radius: 50px 50px 0 0;
+}
+
+main>section:nth-child(2)>section>aside:nth-child(2)>div:nth-child(6):hover{ /*new transitions*/
+    transform: scale(1.5,1.5);
+    bottom:600px;
 }
 
 main>section:nth-child(2)>section>aside:nth-child(2)>div:nth-child(6)>p>a>b{
@@ -2611,6 +2629,10 @@ main>section:nth-child(9)>section>article>form>fieldset>button{
     color: #24144C;
 }
 
+main>section:nth-child(9)>section>article>form>fieldset>button:hover{ /*new Transaction*/
+    transform: scale(1.2,1.2);
+}
+
 footer{
     height: 10vh;
     position: relative;
@@ -2633,3 +2655,4 @@ footer>p>small{
 #span {
     color: #24144C;
 }
+
