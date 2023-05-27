@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CustomerManage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/font-awsome/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+  <style>
+
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+
+    body {
+      background-color:#9980FA;
+      height: 100vh;
+    }
+
+    * {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    main > h1 {
+      font-family: 'Inter', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 43px;
+    }
+  </style>
+
+</head>
+<body>
+<main class="container mt-5">
+
+  <button class="btn btn-primary position-relative "  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="background: #6f42c1; color: black; border: 1px solid #6f42c1">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="staticBackdropLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link "  href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="customers.html">Customers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="item.html">Items</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="orders.html">Order</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <h1 class="ms-5 position-relative" style="bottom: 43px; left: 10px;">CUSTOMERS</h1>
+  <section class="row position-relative"  style="top:-43px">
+    <div class="col-sm-12 col-12 col-lg-5 mt-5 col-xl-4">
+      <h4 class="rounded-3 p-2 bg-opacity-25 bg-success"
+          style="  border: 1px solid black;background-color: #905FCA">Search Customer</h4>
+      <div class=" col-7 mt-4 mb-3 ">
+        <select class="form-select bg-transparent " aria-label="Default select example">
+          <option selected class="col-8">Select Name/NIC/Code</option>
+          <option value="1">Name</option>
+          <option value="2">NIC</option>
+          <option value="3">Code</option>
+        </select>
+      </div>
+
+      <div class="form-floating input-group mt-1 mb-3 col-10">
+
+        <input type="email" class="form-control bg-transparent" id="floatingInput" placeholder="samu@gmail.com">
+        <label for="floatingInput">Customer Name/NIC/Code</label>
+        <button class="btn btn-outline-secondary text-dark bg-opacity-75" type="button" id="button-addon2"
+                style="background-color: #905FCA">Search
+        </button>
+
+      </div>
+
+      <button type="button" class="btn btn-danger  me-2">Delete</button>
+      <button type="button" class="btn btn-warning me-2">Update</button>
+      <button type="button" class="btn btn-success me-2">Clear</button>
+
+    </div>
+
+    <div class="row col-sm-12 col-12 col-lg-6 col-xl-6">
+      <div class="col-6 position-relative " style="top:10px; left: 200px">
+        <h5>Customer Code</h5>
+        <h6 class="text-muted">C00-001</h6>
+
+        <h5>Customer Name</h5>
+        <h6 class="text-muted">Samudi Senevirathne</h6>
+
+        <h5>Customer NIC</h5>
+        <h6 class="text-muted">200056801249</h6>
+
+        <h5>Customer DOB</h5>
+        <h6 class="text-muted">2000/03/08</h6>
+
+        <h5>Customer Address</h5>
+        <h6 class="text-muted">Renuka,"Wehella",Urugamuwa.</h6>
+
+        <h5>Customer Salary</h5>
+        <h6 class="text-muted">100,000/=</h6>
+      </div>
+    </div>
+
+    <div class="col-sm-5 col-5 col-xl-2">
+      <!--(As a good Practice) Button trigger modal -->
+      <button type="button" class="btn btn-dark col-sm-12" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add Customer</button>
+
+      <!-- (As a good Practice)Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add Customer</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <section class="container">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="customerCode" placeholder="C00-001">
+                  <label for="customerCode">Customer Code</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="customerName" placeholder="Samu Sene">
+                  <label for="customerName">Customer Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="customerNIC" placeholder="200056801249">
+                  <label for="customerNIC">Customer NIC</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="date" class="form-control" id="customerDOB" placeholder="2000/03/08">
+                  <label for="customerDOB">Customer DOB</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="customerAddress" placeholder="Matara">
+                  <label for="customerAddress">Customer Address</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="customerSalary" placeholder="100,000">
+                  <label for="customerSalary">Customer Salary</label>
+                </div>
+              </section>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Save Customer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="row position-relative mt-sm-2 " style="top:-78px">
+    <div class="col-12   text-sm-end text-lg-start ">
+      <button type="button" class="btn btn-primary text-sm-end ">View All Customers</button>
+    </div>
+    <div class="col-12 mt-5 overflow-y-scroll" style="height:180px">
+      <table class="table mt-3 table-hover">
+        <thead class="" style="border-radius: 5px; background-color: #905FCA;">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Customer Code</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Customer NIC</th>
+          <th scope="col">Customer DOB</th>
+          <th scope="col">Customer Address</th>
+          <th scope="col">Customer Salary</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>C00-001</td>
+          <td>Samudi Senevirathne</td>
+          <td>200056801249</td>
+          <td>2000/03/08</td>
+          <td>Matara</td>
+          <td>100,000</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>C00-002</td>
+          <td>Samudi Senevirathne</td>
+          <td>200056801249</td>
+          <td>2000/03/08</td>
+          <td>Matara</td>
+          <td>100,000</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>C00-003</td>
+          <td>Samudi Senevirathne</td>
+          <td>200056801249</td>
+          <td>2000/03/08</td>
+          <td>Matara</td>
+          <td>100,000</td>
+        </tr>
+
+        <tr>
+          <th scope="row">4</th>
+          <td>C00-004</td>
+          <td>Samudi Senevirathne</td>
+          <td>200056801249</td>
+          <td>2000/03/08</td>
+          <td>Matara</td>
+          <td>100,000</td>
+        </tr>
+
+        <tr>
+          <th scope="row">5</th>
+          <td>C00-005</td>
+          <td>Samudi Senevirathne</td>
+          <td>200056801249</td>
+          <td>2000/03/08</td>
+          <td>Matara</td>
+          <td>100,000</td>
+        </tr>
+
+        <tr>
+          <th scope="row">6</th>
+          <td>C00-006</td>
+          <td>Samudi Senevirathne</td>
+          <td>200056801249</td>
+          <td>2000/03/08</td>
+          <td>Matara</td>
+          <td>100,000</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<script src="../assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>

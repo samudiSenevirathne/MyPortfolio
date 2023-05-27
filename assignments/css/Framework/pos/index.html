@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/font-awsome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <style>
+
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+
+        body {
+            background-color:#9980FA;
+            height: 100vh;
+            width:100vw;
+        }
+
+        section {
+            width: 100%;
+            height: 600px;
+        }
+
+
+        header > nav > div > a {
+            font-family: 'Dancing Script', cursive;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 70px !important;
+            line-height: 70px;
+            text-align: right;
+            width: 300px;
+            height: max-content;
+            color: #000000;
+        }
+
+        header > nav > div > ul > li > a {
+            text-decoration: none;
+            color: #000000 !important;
+        }
+
+        header > nav > div > ul > li {
+            font-family: 'Dancing Script', cursive;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            color: #000000 !important;
+        }
+
+        header > nav > div > ul > li > a > i {
+            padding-right: 30px;
+        }
+
+        main > section > a  {
+            height: 60%;
+            color: #000000 !important;
+        }
+        main > section > a > div {
+            height: 80%;
+            width: 70%;
+        }
+
+        main > section > a:nth-of-type(1) > div > div {
+            background: url("assets/images/customer.png");
+            background-position: center;
+            background-size: cover;
+            height: 54%;
+            width: 50%;
+        }
+
+        main > section > a:nth-of-type(2) > div > div {
+            background: url("assets/images/order.png");
+            background-position: center;
+            background-size: cover;
+            height: 55%;
+            width: 57%;
+        }
+
+
+        main > section > a:nth-of-type(3) > div > div {
+            background: url("assets/images/item.png");
+            background-position: center;
+            background-size: cover;
+            height: 49%;
+            width: 66%;
+        }
+
+
+        main > section > a > div > h4 {
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+
+<header class="position-relative top-0 justify-content-sm-center">
+  <nav class="navbar"  style="background:#9980FA">
+        <!-- Navbar-->
+        <div class="container  justify-content-sm-center">
+            <a class="navbar-brand m-sm-5 text-sm-center text-wrap position-relative start-0 text-xl-end" href="#" style="left:-150px!important;">POS</a>
+            <ul class="nav justify-content-end justify-content-sm-center me-5">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="otherPages/customers.html"><i
+                            class="fa-solid fa-user"></i>Customers</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="otherPages/item.html"><i class="fa-solid fa-box"></i>Items</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="otherPages/orders.html"><i class="fa-solid fa-cart-shopping"></i>Orders</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="container  justify-content-center">
+    <section class="row mt-sm-5  mt-md-5 justify-content-center" style="margin-top: -5rem !important;" >
+        <a href="otherPages/customers.html" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
+            <div class="col-12 position-relative" style="background-color:#F0A762; border-radius: 100%">
+                <div class="position-absolute bottom-0 start-0 end-0 top-0 " style="margin: auto"></div>
+                <h4 class=" col-6 position-absolute top-100" style="left: 52px">CUSTOMERS</h4>
+            </div>
+        </a>
+        <a href="otherPages/orders.html" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
+            <div class=" col-12 position-relative"
+                 style="background-color: #3D8B90;border-radius: 100%">
+                <div class="position-absolute bottom-0 start-0 end-0 top-0 " style="margin: auto"></div>
+                <h4 class=" col-6 position-absolute top-100" style="left: 81px">ORDER</h4>
+            </div>
+        </a>
+        <a href="otherPages/item.html" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center  m-3 position-relative">
+            <div class="col-12 position-relative" style="background-color: #E58D8D;border-radius: 100%">
+                <div class="position-absolute bottom-0 start-0 end-0 top-0 " style="margin: auto"></div>
+                <h4 class=" col-6 position-absolute top-100" style="left: 80px">ITEMS</h4>
+            </div>
+        </a>
+    </section>
+</main>
+<script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

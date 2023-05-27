@@ -2764,7 +2764,7 @@ main>section{
         margin-top: 0;
         position: absolute;
         left: 474px;
-        top: 43px;
+        top: 75px;
         font-family: 'Inter', sans-serif;
         font-weight: 800;
         font-size: 19px;
@@ -2777,6 +2777,9 @@ main>section{
     #span {
         color: #24144C;
     }
+
+
+
 
 
 @media all and (min-width:768px) and (max-width:795px) {
@@ -14873,5 +14876,6 @@ main>section{
     /*}*/
 
 }
+
 
 
