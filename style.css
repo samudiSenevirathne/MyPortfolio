@@ -4842,7 +4842,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         top: 129px;
     }
 
-}
+} /*ok*/
 
 @media all and (min-width:321px) and (max-width:375px) {
 

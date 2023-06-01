@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>que</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+  ::-webkit-scrollbar{
+    width:0;
+  }
+
+  main{
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      background: darkslategray;
+  }
+
+  main>div{
+      border:1px solid white;
+      width:900px;
+      position: absolute;
+      margin: auto;
+  }
+
+  main>div:nth-child(1){
+      left: 0;
+      right: 0;
+      top: 281px;
+
+  }
+
+  main>div:nth-child(2){
+      left:0;
+      right:0;
+      bottom: 281px;
+
+  }
+
+  body>main>section{
+      position: absolute;
+      left:0;
+      top:0;
+      right:0;
+      bottom:0;
+      margin:auto;
+      width:900px;
+      height: 225px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  body>main>section>div{
+      flex-shrink: 1;
+      width:130px;
+      height: 60px;
+      border-radius:5px;
+  }
+
+  section>div:nth-child(1){
+      align-self: start;
+  }
+
+  section>div:nth-child(6) {
+      align-self: end;
+  }
+
+</style>
+</head>
+
+<body>
+<main>
+    <div></div>
+    <div></div>
+<section>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+  <div class="id"></div>
+</section>
+</main>
+<script>
+
+    let colors=["red","green","blue","yellow","pink","mediumPurple"];
+
+    setInterval(function (){
+    let divArray=document.querySelector("section").children;
+    for (let i = 0; i < colors.length; i++) {
+        console.log(colors[i]);
+        divArray[i].style.background = colors[i];
+    }
+        colors.unshift(colors.pop());
+            },200);
+
+
+</script>
+</body>
+</html>
+
