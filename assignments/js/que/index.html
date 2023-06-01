@@ -16,6 +16,16 @@
       height: 100vh;
       width: 100vw;
       background: darkslategray;
+      color:white;
+      font-size: 20px;
+      text-align: center;
+  }
+
+  main>h1{
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 0;
+      top: 100px;
   }
 
   main>div{
@@ -25,14 +35,14 @@
       margin: auto;
   }
 
-  main>div:nth-child(1){
+  main>div:nth-child(2){
       left: 0;
       right: 0;
       top: 281px;
 
   }
 
-  main>div:nth-child(2){
+  main>div:nth-child(3){
       left:0;
       right:0;
       bottom: 281px;
@@ -73,6 +83,7 @@
 
 <body>
 <main>
+    <h1>Java Script Queue</h1>
     <div></div>
     <div></div>
 <section>
@@ -95,7 +106,7 @@
         divArray[i].style.background = colors[i];
     }
         colors.unshift(colors.pop());
-            },200);
+            },500);
 
 
 </script>
