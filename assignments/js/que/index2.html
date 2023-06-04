@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>que</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        ::-webkit-scrollbar{
+            width:0;
+        }
+
+        main{
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            /*background: #2c3034;*/
+            color:deeppink;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        main>h1{
+            position: relative;
+            margin-top: 0;
+            margin-bottom: 0;
+            top: 100px;
+        }
+
+        main>div:nth-child(2){
+            border:1px solid white;
+            width:775px;
+            position: absolute;
+            margin: auto;
+            left:0;
+            right:0;
+            bottom: 250px;
+            box-shadow: 0 1px 4px 2px #e7e3e3;
+        }
+
+        body>main>section{
+            position: absolute;
+            left:0;
+            top:0;
+            right:0;
+            bottom:0;
+            margin:auto;
+            width:780px;
+            height: 225px;
+            display: flex;
+            align-items: center;
+        }
+
+        body>main>section>div{
+            flex-shrink: 1;
+            width:130px;
+            height: 130px;
+            border-radius:5px;
+            background-image: url("assets/images/Business competition.gif");
+            background-size: cover;
+            background-position: center;
+            color:green;
+            font-size: 200px;
+            text-align: end;
+            border:1px solid black;
+        }
+
+
+        body>main>div:nth-child(4){
+            position: absolute;
+            margin: auto;
+            top:0;
+            bottom:0;
+            right: 32px;
+            height: 200px;
+            width:260px;
+            background-image: url("assets/images/Fear.gif");
+            background-position: center;
+            background-size: cover;
+        }
+
+
+    </style>
+</head>
+<body>
+<main>
+    <h1>JS Que</h1>
+    <div></div>
+    <section>
+        <div ></div>
+        <div ></div>
+        <div ></div>
+        <div ></div>
+        <div ></div>
+        <div ></div>
+    </section>
+    <div ></div>
+</main>
+<script>
+
+    let label=["A","B","C","D","E","F"];
+
+    setInterval(function (){
+        let divArray=document.querySelector("section").children;
+        for (let i = 0; i < label.length; i++) {
+            console.log(label[i]);
+            divArray[i].style.font = label[i];
+        }
+        label.unshift(label.pop());
+    },500);
+
+</script>
+</body>
+</html>
