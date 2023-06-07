@@ -695,6 +695,8 @@
     // });
 
 
+    //JQuery Part 01
+
      $("#saveCustomer").click(function () {
         let id = $("#customerCode").val();
         let name =$("#customerName").val();
@@ -703,17 +705,20 @@
         let address = $("#customerAddress").val();
         let salary = $("#customerSalary").val();
         console.log(id,name,nic,dob,address,salary);
-        let tBody=$("#tblCustomer");
-        let tr=  "<tr>"+ tBody +"</tr>";
-        let col1= "<td>"+ id +"</td>";
-        let col2= "<td>"+ name +"</td>";
-        let col3= "<td>"+ nic +"</td>";
-        let col4= "<td>"+ dob +"</td>";
-        let col5= "<td>"+ address +"</td>";
-        let col6= "<td>"+ salary +"</td>";
-        $("tr").append(col1,col2,col3,col4,col5,col6);
-         $("tbody").append(tr);
+        let row=  `<tr>
+                     <td> ${id} </td>
+                     <td> ${name} </td>
+                     <td> ${nic} </td>
+                     <td> ${dob} </td>
+                     <td> ${address} </td>
+                     <td> ${salary} </td>
+                   </tr>`;
+         $("#tblCustomer").append(row);
     });
+
+
+
+
 
 
 
