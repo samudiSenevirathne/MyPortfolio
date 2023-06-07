@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPA</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/font-awsome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <style>
+
+        ::-webkit-scrollbar {
+            width: 0;
+        }
+
+        body {
+            background-color:#9980FA;
+            height: 100vh;
+            width:100vw;
+        }
+
+        section {
+            width: 100%;
+            height: 600px;
+        }
+
+
+        header > nav > div > a {
+            font-family: 'Dancing Script', cursive;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 70px !important;
+            line-height: 70px;
+            text-align: right;
+            width: 300px;
+            height: max-content;
+            color: #000000;
+        }
+
+        header > nav > div > ul > li > a {
+            text-decoration: none;
+            color: #000000 !important;
+        }
+
+        header > nav > div > ul > li {
+            font-family: 'Dancing Script', cursive;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            color: #000000 !important;
+        }
+
+        header > nav > div > ul > li > a > i {
+            padding-right: 30px;
+        }
+
+        main > section > a  {
+            height: 60%;
+            color: #000000 !important;
+        }
+        main > section > a > div {
+            height: 80%;
+            width: 70%;
+        }
+
+        main > section > a:nth-of-type(1) > div > div {
+            background: url("assets/images/customer.png");
+            background-position: center;
+            background-size: cover;
+            height: 54%;
+            width: 50%;
+        }
+
+        main > section > a:nth-of-type(2) > div > div {
+            background: url("assets/images/order.png");
+            background-position: center;
+            background-size: cover;
+            height: 55%;
+            width: 57%;
+        }
+
+
+        main > section > a:nth-of-type(3) > div > div {
+            background: url("assets/images/item.png");
+            background-position: center;
+            background-size: cover;
+            height: 49%;
+            width: 66%;
+        }
+
+
+        main > section > a > div > h4 {
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+
+        main>section:nth-child(2)> h1 {
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 43px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<header class="position-relative top-0 justify-content-sm-center">
+    <nav class="navbar"  style="background:#9980FA">
+        <!-- Navbar-->
+        <div class="container  justify-content-sm-center">
+            <a class="navbar-brand m-sm-5 text-sm-center text-wrap position-relative start-0 text-xl-end" href="#" style="left:-150px!important;">POS</a>
+            <ul class="nav justify-content-end justify-content-sm-center me-5">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-user"></i>Customers</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-box"></i>Items</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-cart-shopping"></i>Orders</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<!--Home-->
+<main class="container  justify-content-center " >
+    <!--Home-->
+    <section class="row mt-sm-5  mt-md-5 justify-content-center" style="margin-top: -5rem !important;" >
+        <a href="#" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
+            <div class="col-12 position-relative" style="background-color:#F0A762; border-radius: 100%">
+                <div class="position-absolute bottom-0 start-0 end-0 top-0 " style="margin: auto"></div>
+                <h4 class=" col-6 position-absolute top-100" style="left: 52px">CUSTOMERS</h4>
+            </div>
+        </a>
+        <a href="#" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
+            <div class=" col-12 position-relative"
+                 style="background-color: #3D8B90;border-radius: 100%">
+                <div class="position-absolute bottom-0 start-0 end-0 top-0 " style="margin: auto"></div>
+                <h4 class=" col-6 position-absolute top-100" style="left: 81px">ORDER</h4>
+            </div>
+        </a>
+        <a href="#" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center  m-3 position-relative">
+            <div class="col-12 position-relative" style="background-color: #E58D8D;border-radius: 100%">
+                <div class="position-absolute bottom-0 start-0 end-0 top-0 " style="margin: auto"></div>
+                <h4 class=" col-6 position-absolute top-100" style="left: 80px">ITEMS</h4>
+            </div>
+        </a>
+    </section>
+      <!--customer-->
+    <section class="container mt-5">
+    <button class="btn btn-primary position-relative "  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="background: #6f42c1; color: black; border: 1px solid #6f42c1">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link "  href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Order</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h1 class="ms-5 position-relative" style="bottom: 72px; left: 10px;">CUSTOMERS</h1>
+    <section class="row position-relative"  style="top:-104px; height: 60%">
+        <div class="col-sm-12 col-12 col-lg-5 mt-5 col-xl-4">
+            <h4 class="rounded-3 p-2 bg-opacity-25 bg-success"
+                style="  border: 1px solid black;background-color: #905FCA">Search Customer</h4>
+            <div class=" col-7 mt-4 mb-3 ">
+                <select class="form-select bg-transparent " aria-label="Default select example">
+                    <option selected class="col-8">Select Name/NIC/Code</option>
+                    <option value="1">Name</option>
+                    <option value="2">NIC</option>
+                    <option value="3">Code</option>
+                </select>
+            </div>
+
+            <div class="form-floating input-group mt-1 mb-3 col-10">
+
+                <input type="email" class="form-control bg-transparent" id="floatingInput" placeholder="samu@gmail.com">
+                <label for="floatingInput">Customer Name/NIC/Code</label>
+                <button class="btn btn-outline-secondary text-dark bg-opacity-75" type="button" id="button-addon2"
+                        style="background-color: #905FCA">Search
+                </button>
+
+            </div>
+
+            <button type="button" class="btn btn-danger  me-2">Delete</button>
+            <button type="button" class="btn btn-warning me-2">Update</button>
+            <button type="button" class="btn btn-success me-2">Clear</button>
+
+        </div>
+
+        <div class="row col-sm-12 col-12 col-lg-6 col-xl-6">
+            <div class="col-6 position-relative " style="top:10px; left: 200px">
+                <h5>Customer Code</h5>
+                <h6 class="text-muted">C00-001</h6>
+
+                <h5>Customer Name</h5>
+                <h6 class="text-muted">Samudi Senevirathne</h6>
+
+                <h5>Customer NIC</h5>
+                <h6 class="text-muted">200056801249</h6>
+
+                <h5>Customer DOB</h5>
+                <h6 class="text-muted">2000/03/08</h6>
+
+                <h5>Customer Address</h5>
+                <h6 class="text-muted">Renuka,"Wehella",Urugamuwa.</h6>
+
+                <h5>Customer Salary</h5>
+                <h6 class="text-muted">100,000/=</h6>
+            </div>
+        </div>
+
+        <div class="col-sm-5 col-5 col-xl-2">
+            <!--(As a good Practice) Button trigger modal -->
+            <button type="button" class="btn btn-dark col-sm-12" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add Customer</button>
+
+            <!-- (As a good Practice)Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add Customer</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="container">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerCode" placeholder="C00-001">
+                                    <label for="customerCode">Customer Code</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerName" placeholder="Samu Sene">
+                                    <label for="customerName">Customer Name</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerNIC" placeholder="200056801249">
+                                    <label for="customerNIC">Customer NIC</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="date" class="form-control" id="customerDOB" placeholder="2000/03/08">
+                                    <label for="customerDOB">Customer DOB</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerAddress" placeholder="Matara">
+                                    <label for="customerAddress">Customer Address</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="customerSalary" placeholder="100,000">
+                                    <label for="customerSalary">Customer Salary</label>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button id="saveCustomer" type="button" class="btn btn-success">Save Customer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="row position-relative mt-sm-2 " style="top:-78px;height: 10%">
+        <div class="col-12  text-sm-end text-lg-start ">
+            <button type="button" class="btn btn-primary text-sm-end ">View All Customers</button>
+        </div>
+        <div class="col-12 mt-5  overflow-y-scroll" style= "height:100px">
+            <table class="table mt-3 table-hover">
+                <thead class="" style="border-radius: 5px; background-color: #905FCA;">
+                <tr>
+                    <th scope="col">Customer Code</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Customer NIC</th>
+                    <th scope="col">Customer DOB</th>
+                    <th scope="col">Customer Address</th>
+                    <th scope="col">Customer Salary</th>
+                </tr>
+                </thead>
+                <tbody id="tblCustomer">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</section>
+    <!--Item-->
+    <section class="container mt-5">
+
+        <button class="btn btn-primary position-relative "  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="background: #6f42c1; color: black; border: 1px solid #6f42c1">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdropItem" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabelItem">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <h1 class="ms-5 position-relative" style="bottom: 64px; left: 10px;">ITEMS</h1>
+        <section class="row position-relative" style="top:-104px; height: 60%">
+            <div class="col-sm-12 col-12 col-lg-5 mt-5 col-xl-4">
+                <h4 class="rounded-3 p-2 bg-opacity-25 bg-success"
+                    style="  border: 1px solid black; background-color: #905FCA">Search Item</h4>
+
+                <div class=" col-7 mt-4 mb-3 ">
+                    <select class="form-select bg-transparent " aria-label="Default select example">
+                        <option selected class="col-8">Select Name/Code</option>
+                        <option value="1">Name</option>
+                        <option value="3">Code</option>
+                    </select>
+                </div>
+
+                <div class="form-floating input-group mt-1 mb-3 col-10">
+                    <input type="email" class="form-control bg-transparent" id="floatingInputItem" placeholder="200056801249">
+                    <label for="floatingInput">tem Name/Code</label>
+                    <button class="btn btn-outline-secondary text-dark bg-opacity-75" type="button" id="button-addon2Item"
+                            style="background-color: #905FCA">Search
+                    </button>
+                </div>
+                <button type="button" class="btn btn-danger  me-2">Delete</button>
+                <button type="button" class="btn btn-warning me-2">Update</button>
+                <button type="button" class="btn btn-success me-2">Clear</button>
+            </div>
+
+            <div class="row col-sm-12 col-12 col-lg-6 col-xl-6">
+                <div class="col-6 position-relative " style="top:10px; left:200px">
+                    <h5>Item Code</h5>
+                    <h6 class="text-muted">I00-001</h6>
+
+                    <h5>Item Name</h5>
+                    <h6 class="text-muted">Sample 01</h6>
+
+                    <h5>Item Description</h5>
+                    <h6 class="text-muted">...........................................</h6>
+
+                    <h5>Item Buying-Price</h5>
+                    <h6 class="text-muted">1000/=</h6>
+
+                    <h5>Item Selling-Price</h5>
+                    <h6 class="text-muted">2000/=</h6>
+
+                    <h5>Item Qty</h5>
+                    <h6 class="text-muted">100</h6>
+                </div>
+            </div>
+
+            <div class="col-sm-5 col-5 col-xl-2">
+                <!--(As good Practice) Button trigger modal -->
+                <button type="button" class="btn btn-dark col-sm-12" data-bs-toggle="modal" data-bs-target="#exampleModalItem">+
+                    Add Item
+                </button>
+
+                <!-- (As good Practice) Modal -->
+                <div class="modal fade" id="exampleModalItem" tabindex="-1" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabelItem">Add Item</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <section class="container">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="itemCode" placeholder="I00-001">
+                                        <label for="itemCode">Item Code</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="itemNameItem" placeholder="Biscuits">
+                                        <label for="itemName">Item Name</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="itemDescriptionItem"
+                                               placeholder="Sample Description">
+                                        <label for="itemDescription">Item Description</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="itemPrice" placeholder="Rs.100000/=">
+                                        <label for="itemPrice">Item Buying-Price</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="itemSellingPrice" placeholder="Rs.20000/=">
+                                        <label for="itemSellingPrice">Item Selling-Price</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="itemQty" placeholder="1000">
+                                        <label for="itemQty">Item Qty</label>
+                                    </div>
+
+                                </section>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button id="saveItem" type="button" class="btn btn-success">Save Item</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="row  position-relative mt-sm-2 " style="top:-78px; height: 10%">
+            <div class="col-12   text-sm-end text-lg-start">
+                <button type="button" class="btn btn-primary text-sm-end ">View All Items</button>
+            </div>
+            <div class="col-12 mt-5 overflow-y-scroll" style= "height:100px">
+                <table class="table mt-3 table-hover">
+                    <thead class="" style="border-radius: 5px; background-color:#905FCA;">
+                    <tr>
+                        <th scope="col">Item Code</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Item Description</th>
+                        <th scope="col">Item Buying Price</th>
+                        <th scope="col">Item Selling Price</th>
+                        <th scope="col">Item Qty</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tblItem">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+    <!--Order-->
+    <section class="container mt-5">
+
+        <button class="btn btn-primary position-relative "  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="background: #6f42c1; color: black; border: 1px solid #6f42c1">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdropOrder" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="staticBackdropLabelOrder">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <h1 class="ms-5 position-relative" style="bottom: 62px; left: 10px;">ORDERS</h1>
+        <section class="row position-relative" style="top:-84px">
+
+            <div class="row col-sm-12 col-12 col-lg-5 mt-5 ms-3 col-xl-4">
+                <h4 class="rounded-3 p-2 bg-opacity-25 bg-success" style="border: 1px solid black; height: max-content; margin: 0;">Invoice Details</h4>
+
+                <div class="col-6">
+                    <div class="form-floating input-group mt-1 ">
+                        <input type="text" class="form-control bg-transparent " id="invoiceID" placeholder="O00-001">
+                        <label for="invoiceID">Invoice ID</label>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-floating input-group mt-1 ">
+                        <input type="date" class="form-control bg-transparent " id="floatingInputOrder">
+                        <label for="floatingInput">Invoice Date</label>
+                    </div>
+                </div>
+
+                <div class=" col-6 mt-4 mb-5 ">
+                    <select class="form-select bg-transparent " aria-label="Default select example">
+                        <option selected class="col-6">Customer</option>
+                        <option value="1">C00-001</option>
+                        <option value="2">C00-002</option>
+                        <option value="3">C00-003</option>
+                    </select>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-floating input-group mt-1 ">
+                        <input type="text" class="form-control bg-transparent " id="customerName2" placeholder="Samu Sene">
+                        <label for="customerName2">Customer Name</label>
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <div class="form-floating input-group mt-1 mb-3">
+                        <input type="text" class="form-control bg-transparent " id="customerAddress2" placeholder="Samu Sene">
+                        <label for="customerAddress2">Customer Address</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row col-sm-12 col-12 col-lg-5 mt-5 ms-3 col-xl-4 justify-content-end">
+                <h4 class="rounded-3 p-2 bg-opacity-25 bg-success" style="border: 1px solid black; height: max-content; margin: 0;">Select Items</h4>
+                <div class=" col-6 mt-4 mb-5 ">
+                    <select class="form-select bg-transparent " aria-label="Default select example">
+                        <option selected class="col-6">Item</option>
+                        <option value="1">I00-001</option>
+                        <option value="2">I00-002</option>
+                        <option value="3">I00-003</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <div class="form-floating input-group mt-1 ">
+                        <input type="text" class="form-control bg-transparent " id="itemName" placeholder="Item Name">
+                        <label for="itemName">Item Name</label>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-floating input-group mt-1 mb-3">
+                        <input type="text" class="form-control bg-transparent " id="itemDescription" placeholder="..............">
+                        <label for="itemDescription">Item Description</label>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-floating input-group mt-1 ">
+                        <input type="text" class="form-control bg-transparent " id="unitPrice" placeholder="Unit Price">
+                        <label for="unitPrice">Unit Price</label>
+                    </div>
+                </div>
+
+
+                <div class="col-6">
+                    <div class="form-floating input-group mt-1 ">
+                        <input type="text" class="form-control bg-transparent " id="QtyOnHand" placeholder="xxxxxxx">
+                        <label for="QtyOnHand">Qty On Hand</label>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success col-4 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModalOrder">Add To Cart</button>
+            </div>
+
+            <div class="row col-sm-12  col-lg-6 col-xl-3 justify-content-center align-items-center ms-3 position-relative" style="top: 40px;">
+                <h4 class="col-5">Sub-Total:</h4>
+                <h4 class="col-5 text-danger text-start">100,000/=</h4>
+
+                <div class="col-12">
+                    <div class="form-floating input-group">
+                        <input type="text" class="form-control bg-transparent " id="cash" placeholder="xxxxxxxxxxx">
+                        <label for="cash">Cash</label>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-floating input-group  ">
+                        <input type="text" class="form-control bg-transparent " id="discount" placeholder="xxxxxxxxxxxx">
+                        <label for="discount">Discount</label>
+                    </div>
+                </div>
+
+                <h4 class="col-5">Total:</h4>
+                <h4 class="col-5 text-danger text-start">99,000/=</h4>
+
+                <h4 class="col-5">Balance:</h4>
+                <h4 class="col-5 text-danger text-success">1,000/=</h4>
+
+                <button type="button" class="btn btn-dark col-10 " data-bs-toggle="modal" data-bs-target="#exampleModall">Place Order</button>
+            </div>
+        </section>
+
+        <section class="row mt-sm-2 position-relative mt-sm-2 " style="top:-100px; height: 10%">
+
+            <div class="col-12 mt-5 overflow-y-scroll">
+                <table class="table mt-3 table-hover">
+                    <thead class="" style="border-radius: 5px; background-color:#905FCA;">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Item Code</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Item Description</th>
+                        <th scope="col">Unit Price</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Cost</th>
+                        <th scope="col"> --</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+
+</main>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery/jquery-3.7.0.min.js"></script>
+<script></script>
+<script>
+
+    // document.getElementById("saveCustomer").addEventListener("click", function () {
+    //     let id = document.getElementById("customerCode").value;
+    //     let name = document.getElementById("customerName").value;
+    //     let nic=document.getElementById("customerNIC").value;
+    //     let dob=document.getElementById("customerDOB").value;
+    //     let address = document.getElementById("customerAddress").value;
+    //     let salary = document.getElementById("customerSalary").value;
+    //     console.log(id,name,nic,dob,address,salary);
+    //     let tBody=document.getElementById("tblCustomer");
+    //     let tr= document.createElement("tr");
+    //     let col1= document.createElement("td");
+    //     let col2= document.createElement("td");
+    //     let col3= document.createElement("td");
+    //     let col4= document.createElement("td");
+    //     let col5= document.createElement("td");
+    //     let col6= document.createElement("td");
+    //     col1.textContent=id;
+    //     col2.textContent=name;
+    //     col3.textContent=nic;
+    //     col4.textContent=dob;
+    //     col5.textContent=address;
+    //     col6.textContent=salary;
+    //     tr.appendChild(col1);
+    //     tr.appendChild(col2);
+    //     tr.appendChild(col3);
+    //     tr.appendChild(col4);
+    //     tr.appendChild(col5);
+    //     tr.appendChild(col6);
+    //     tBody.appendChild(tr);
+    // });
+
+
+     $("#saveCustomer").click(function () {
+        let id = $("#customerCode").val();
+        let name =$("#customerName").val();
+        let nic=$("#customerNIC").val();
+        let dob=$("#customerDOB").val();
+        let address = $("#customerAddress").val();
+        let salary = $("#customerSalary").val();
+        console.log(id,name,nic,dob,address,salary);
+        let tBody=$("#tblCustomer");
+        let tr=  "<tr>"+ tBody +"</tr>";
+        let col1= "<td>"+ id +"</td>";
+        let col2= "<td>"+ name +"</td>";
+        let col3= "<td>"+ nic +"</td>";
+        let col4= "<td>"+ dob +"</td>";
+        let col5= "<td>"+ address +"</td>";
+        let col6= "<td>"+ salary +"</td>";
+        $("tr").append(col1,col2,col3,col4,col5,col6);
+         $("tbody").append(tr);
+    });
+
+
+
+
+    document.getElementById("saveItem").addEventListener("click", function () {
+        let id = document.getElementById("itemCode").value;
+        let name = document.getElementById("itemName").value;
+        let describe=document.getElementById("itemDescription").value;
+        let bPrice=document.getElementById("itemPrice").value;
+        let sPrice = document.getElementById("itemSellingPrice").value;
+        let qty = document.getElementById("itemQty").value;
+        console.log(id,name,describe,bPrice,sPrice,qty);
+        let tBody=document.getElementById("tblItem");
+        let tr= document.createElement("tr");
+        let col1= document.createElement("td");
+        let col2= document.createElement("td");
+        let col3= document.createElement("td");
+        let col4= document.createElement("td");
+        let col5= document.createElement("td");
+        let col6= document.createElement("td");
+        col1.textContent=id;
+        col2.textContent=name;
+        col3.textContent=describe;
+        col4.textContent=bPrice;
+        col5.textContent=sPrice;
+        col6.textContent=qty;
+        tr.appendChild(col1);
+        tr.appendChild(col2);
+        tr.appendChild(col3);
+        tr.appendChild(col4);
+        tr.appendChild(col5);
+        tr.appendChild(col6);
+        tBody.appendChild(tr);
+    });
+
+</script>
+</body>
+
+</html>
+
