@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cal</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            background:linear-gradient(to right bottom,#192a56,#00a8ff,#192a56);
+        }
+
+        div {
+            background:#192a56;
+            height: 100px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        div:hover {
+            background: transparent;
+        }
+
+        section:first-of-type {
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section:first-of-type > input {
+            height: 100px;
+            background-color: transparent;
+            color: white;
+            border: none;
+            text-align: right;
+            font-size: 50px;
+        }
+
+        section:first-of-type > input::placeholder {
+            color: white;
+        }
+
+    </style>
+</head>
+<body class="container">
+<main class="row justify-content-center ">
+    <section class="col-12 justify-content-center">
+        <div id="btnClear" class="col-1 m-1">C</div>
+        <input id="txtInput" type="text" class="col-10" placeholder="0" disabled>
+    </section>
+    <section class="row col-12  justify-content-center">
+        <div id="no7" class="col-3 m-1">7</div>
+        <div id="no8" class="col-3 m-1">8</div>
+        <div id="no9" class="col-3 m-1">9</div>
+        <div id="plus" class="col-2 m-1">+</div>
+    </section>
+
+    <section class="row col-12 justify-content-center">
+        <div id="no4" class="col-3 m-1">4</div>
+        <div id="no5" class="col-3 m-1">5</div>
+        <div id="no6" class="col-3 m-1">6</div>
+        <div id="min" class="col-2 m-1">-</div>
+    </section>
+    <section class="row col-12 justify-content-center">
+        <div id="no1" class="col-3 m-1">1</div>
+        <div id="no2" class="col-3 m-1">2</div>
+        <div id="no3" class="col-3 m-1">3</div>
+        <div id="div" class="col-2 m-1">/</div>
+    </section>
+    <section class="row col-12 justify-content-center">
+        <div id="no0" class="col-3 m-1">0</div>
+        <div id="dot" class="col-3 m-1">.</div>
+        <div id="equal" class="col-3 m-1">=</div>
+        <div id="mul" class="col-2 m-1">*</div>
+    </section>
+</main>
+
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+<script src="assets/js/js/bootstrap.min.js"></script>
+<script>
+    let input =$("#txtInput");
+    let value="";
+    $("#btnClear").click(function () {
+        input.val("");
+        value = "";
+    });
+    $("#no0").click(function () {
+        input.val(input.val() + 0);
+    });
+
+    $("#no1").click(function () {
+        input.val(input.val() + 1);
+    });
+
+    $("#no2").click(function () {
+        input.val(input.val() + 2);
+    });
+
+    $("#no3").click(function () {
+        input.val(input.val() + 3);
+    });
+
+    $("#no4").click(function () {
+        input.val(input.val() + 4);
+    });
+
+    $("#no5").click(function () {
+        input.val(input.val() + 5);
+    });
+
+    $("#no6").click(function () {
+        input.val(input.val() + 6);
+    });
+
+    $("#no7").click(function () {
+        input.val(input.val() + 7);
+    });
+
+    $("#no8").click(function () {
+        input.val(input.val() + 8);
+    });
+
+    $("#no9").click(function () {
+        input.val(input.val() + 9);
+    });
+
+    $("#min").click(function () {
+        value += input.val() + "-";
+        input.val("");
+    });
+
+    $("#plus").click(function () {
+        value += input.val() + "+";
+        input.val("");
+    });
+
+    $("#mul").click(function () {
+        value += input.val() + "*";
+        input.val("");
+    });
+
+    $("#div").click(function () {
+        value += input.val() + "/";
+        input.val("");
+    });
+
+    $("#dot").click(function () {
+        input.val(input.val() + ".");
+    });
+
+    $("#equal").click(function () {
+        value += (input.val());
+        input.val(eval(value));
+        console.log(value)
+        value="";
+    });
+</script>
+</body>
+</html>
