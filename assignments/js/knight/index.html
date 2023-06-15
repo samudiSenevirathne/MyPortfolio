@@ -2,138 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>knightRider</title>
-   <link rel="stylesheet" href="assets/normalize.css">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KnightRider</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
 
-  <style>
+        body {
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-    ::-webkit-scrollbar{
-      width:0;
-    }
+        section {
+            height: 100px;
+            width: 1500px;
+            overflow: hidden;
+        }
 
-    main{
-      position: relative;
-      height: 100vh;
-      width: 100vw;
-      background: black;
-      color:red;
-      font-size: 20px;
-      text-align: center;
-    }
+        section > div {
+            height: 100px;
+            aspect-ratio: 3/1;
+            border: 1px solid white;
+            display: inline-block;
+            border-radius:5px;
+        }
 
-    main>h1{
-      position: relative;
-      margin-top: 0;
-      margin-bottom: 0;
-      top: 217px;
-    }
+        main {
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+            bottom: -300px;
+        }
 
-    main>div{
-      border:1px solid white;
-      width:900px;
-      position: absolute;
-      margin: auto;
-    }
 
-    main>div:nth-child(2){
-      left: 0;
-      right: 0;
-      top: 281px;
-    }
+    </style>
 
-    main>div:nth-child(3){
-      left:0;
-      right:0;
-      bottom: 281px;
-
-    }
-
-    body>main>section{
-      position: absolute;
-      left:0;
-      top:0;
-      right:0;
-      bottom:0;
-      margin:auto;
-      width:900px;
-      height: 225px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    body>main>section>div{
-      border:1px solid white;
-      flex-shrink: 1;
-      width:130px;
-      height: 60px;
-      border-radius:5px;
-    }
-
-    main>button{
-      height: 45px;
-      width: 100px;
-      border-radius:5px;
-      color:black;
-      font-size: 20px;
-      text-align: center;
-      padding: 0 0 0 0;
-      position: absolute;
-      margin: auto;
-    }
-
-    main>button:nth-child(5){
-      background: blue;
-      left:0;
-      right: 130px;
-      bottom: 219px;
-      cursor: pointer;
-    }
-
-    main>button:nth-child(6){
-      background: red;
-      left: 140px;
-      right: 0;
-      bottom: 219px;
-      cursor: pointer;
-    }
-
-  </style>
 </head>
 <body>
+<section id="container">
+
+</section>
 <main>
-  <h1>JavaScript Knight Rider</h1>
-  <div></div>
-  <div></div>
-  <section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </section>
-  <button>start</button>
-  <button>stop</button>
+    <audio id="audioPlayer" src="assets/audio/Knight%20Rider.mp3"></audio>
+    <button class="btn btn-success" id="btnStart" type="button">Start</button>
+    <button class="btn btn-danger" id="btnStop" type="button">Stop</button>
 </main>
+<script src="assets/js/jquery-3.7.0.min.js"></script>
+<script src="assets/js/js/bootstrap.min.js"></script>
 <script>
 
-  let colors=["red","lightred","brown","lightbrown","gray","lightgray","gray"];
 
-  setInterval(function (){
-    let divArray=document.querySelector("section").children;
-    for (let i = 0; i < colors.length; i++) {
-      console.log(colors[i]);
-      divArray[i].style.background = colors[i];
+
+    let divs = [ 'black', 'black', 'black', 'black', 'black','#DB8D8DFF', '#c65252', '#a83636', '#7f1414','#680909'];
+    let opp = ['black', 'black', 'black', 'black', 'black', '#680909', '#7f1414', '#a83636', '#c65252','#DB8D8DFF'];
+    let count = 0;
+    let check = true;
+
+
+    function reorder() {
+        if ( check == true ) {
+            let temp = divs.pop();
+            divs.unshift(temp);
+            count++;
+            $('#container').empty();
+            for (obj1 of divs) {
+                let div = `<div " style="background-color: ${obj1}"></div>`;
+                $('#container').append(div);
+            }
+            if (count == 10) {
+                check = false;
+            }
+        } else if (check == false) {
+
+            let temp = opp.shift();
+            opp.push(temp);
+            count--;
+            $('#container').empty();
+            for (obj1 of opp) {
+                let div = `<div  style="background-color: ${obj1}"></div>`;
+                $('#container').append(div);
+            }
+            if (count == 0) {
+                check = true;
+            }
+
+        }
     }
-    colors.unshift(colors.pop());
-  },500);
+
+    const audioPlayer = document.getElementById('audioPlayer');
+
+    let inter=0;
+    $('#btnStart').click(function(){
+        audioPlayer.play();
+        clearInterval(inter);
+        inter =  setInterval(reorder, 50);
 
 
+    });
 
+    $('#btnStop').click(function(){
+        audioPlayer.pause();
+        clearInterval(inter);
 
+    });
 </script>
 </body>
 </html>
