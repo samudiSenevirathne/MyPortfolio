@@ -3,79 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>Animation Assignment-05</title>
-    <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <style>
 
-        ::-webkit-scrollbar {
-            width: 0;
-        }
-
-
-        section {
-            display: flex;
+        main {
+            width: 800px;
+            height: 400px;
+            border: 2px solid black;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
             overflow: hidden;
-            height: 100vh;
-            width: 100vw;
         }
 
-        section > div {
-            height: 100vh;
-            width: 100vw;
-            flex-shrink: 0;
-            animation-name: animation;
+        main > section {
+            width: calc(100% * 5);
+            height: 100%;
+            display: flex;
+            animation-name: slider;
+            animation-duration: 10s;
             animation-iteration-count: infinite;
             animation-fill-mode: forwards;
             animation-direction: alternate;
-            animation-duration: 10s;
         }
 
-        section > div:nth-of-type(1) {
+        main > section > div {
+            height: 100%;
+            flex-grow: 1;
+        }
+
+        main > section > div:nth-child(1) {
             background: url("image/pexels-pixabay-326055.jpg");
-            background-size:cover;
-            background-position: center;
-
+            background-size: cover;
+            background-position: top;
         }
-        section > div:nth-of-type(2) {
+
+        main > section > div:nth-child(2) {
             background: url("image/pexels-pixabay-36717.jpg");
-            background-size:cover;
-            background-position: center;
+            background-size: cover;
+            background-position: top;
         }
-        section > div:nth-of-type(3) {
+
+        main > section > div:nth-child(3) {
             background: url("image/pexels-pixabay-36762.jpg");
-            background-size:cover;
-            background-position: center;
+            background-size: cover;
+            background-position: top;
         }
-        section > div:nth-of-type(4) {
+
+        main > section > div:nth-child(4) {
             background: url("image/pexels-pixabay-33109.jpg");
-            background-size:cover;
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(5) {
+            background: url("image/pexels-pixabay-326055.jpg");
+            background-size: cover;
             background-position: center;
         }
 
 
-        @keyframes animation {
-            0%,20%{
-                transform: translateX(0);
+        @keyframes slider {
+            0%,15% { /*time gap*/
+                transform: translateX(calc((-100%/5)*0));
             }
-            30%,50% {
-                transform: translateX(-100%);
+            20%,35% {
+                transform: translateX(calc((-100%/5)*1));
             }
-            60%,80% {
-                transform: translateX(-200%);
+            40%,55% {
+                transform: translateX(calc((-100%/5)*2));
             }
-            90%,100% {
-                transform: translateX(-300%);
+            60%,75% {
+                transform: translateX(calc((-100%/5)*3));
+            }
+            80%,100% {
+                transform: translateX(calc((-100%/5)*4));
             }
         }
 
     </style>
 </head>
 <body>
-<section>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</section>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
 </body>
 </html>

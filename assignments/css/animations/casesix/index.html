@@ -5,126 +5,103 @@
     <title>Animation Assignment-06</title>
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="assets/css/normalize.css">
-
     <style>
-        ::-webkit-scrollbar {
-            width: 0;
-            height: 0;
+        body{
+            overflow: hidden;
         }
-
-        body {
-            margin: 0;
-        }
-        @media (-webkit-device-pixel-ratio: 1.25) {
-            section > aside > aside {
-                left: 650px !important;
-            }
-        }
-
-        section {
-            position: relative;
-            overflow: scroll;
-            height: 100vh;
+        main {
+            background: url("image/sky.jpg");
             width: 100vw;
-            background: url("image/sky.jpg") center;
+            height: 100vh;
             background-size: cover;
         }
 
-        section > section:nth-child(1) {
+        main > #city {
+            height: 31vh;
+            width: 400vw;
+            background: url("image/city.png");
             position: absolute;
-            height: 30vh;
-            width: 200vw;
-            bottom: 30vh;
-            background: url("image/city.png") center;
-            background-repeat: space;
-            background-size: 100vw 30vh;
-            animation-name: background;
-            animation-duration: 10s;
-            animation-timing-function: ease-out;
+            bottom: 25vh;
         }
 
-        section > section:nth-child(2) {
+        main > #road {
+            height: 25vh;
+            background: url("image/road.jpg");
             position: absolute;
+            width: 400vw;
             bottom: 0;
-            height: 30vh;
-            width: 200vw;
-            background: url("image/road.jpg") center;
-            background-size: cover;
-            animation-name: background;
+        }
+        #road,#city{
+            animation-name:moveCityAndRoad ;
             animation-duration: 10s;
-            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
 
-        section > aside > img:first-child {
-            height: 120px;
+        main > #car {
+            width: 400px;
+            height: 150px;
             position: absolute;
+            bottom: 20%;
             left: 0;
             right: 0;
             margin: auto;
-            bottom: 20vh;
+            z-index: 2;
+            background: url("image/car.png");
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
-        section > aside > aside {
-            display: flex;
+        #leftWheel, #rightWheel {
+            width: 70px;
+            height: 70px;
+            background: url("image/wheel.png");
+            background-size: cover;
             position: absolute;
-            bottom: 20vh;
-            left: 566px;
-            margin: auto;
+            animation-name:wheels ;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
 
-        section > aside > aside > img {
-            height: 55px;
-            margin-right: 120px;
-            animation-name:wheels;
-            animation-duration: 35s;
-            animation-timing-function: ease-out;
+        #rightWheel {
+            right: 48px;
+            bottom: -10px;
+
         }
 
-        @keyframes background {
-            from {
-                transform: translate(0vw);
-            }
-
-            to {
-                transform: translate(-100vw);
-            }
-
+        #leftWheel {
+            bottom: -10px;
+            left: 35px;
         }
 
         @keyframes wheels {
-            0% {
+            from {
                 transform: rotate(0deg);
             }
-
-            25% {
-                transform: rotate(360deg);
-            }
-            50% {
-                transform: rotate(360deg);
-            }
-
-            75% {
-                transform: rotate(360deg);
-            }
-            100% {
-                transform: rotate(360deg);
+            to {
+                transform: rotate(-360deg);
             }
         }
-
+        @keyframes moveCityAndRoad {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-75%);
+            }
+        }
     </style>
-
 </head>
 <body>
-<section>
-    <section></section>
-    <section></section>
-    <aside>
-        <img src="image/car.png" alt="car">
-        <aside>
-            <img src="image/wheel.png" alt="wheel">
-            <img src="image/wheel.png" alt="wheel">
-        </aside>
-    </aside>
-</section>
+<main>
+    <div id="city"></div>
+    <section id="car">
+        <div id="carBody"></div>
+        <div id="leftWheel"></div>
+        <div id="rightWheel"></div>
+    </section>
+    <div id="road"></div>
+</main>
 </body>
 </html>

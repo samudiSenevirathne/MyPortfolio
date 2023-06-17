@@ -1875,19 +1875,25 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
     }
 
     main > section:nth-child(6) > section {
+        overflow:scroll;
+    }
+
+    main > section:nth-child(6) > section > section {
+        width: calc(100% * 3);
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
     }
 
-    main > section:nth-child(6) > section > div {
+    main > section:nth-child(6) > section > section > div {
         height: 400px;
         width: 100px;
         border: 2px solid #FFFFFF;
         border-radius: 56px;
     }
 
-    main > section:nth-child(6) > section > div > a > p {
+    main > section:nth-child(6) > section > section > div > a > p {
         margin-bottom: 0;
         margin-top: 0;
         font-family: 'Metal', cursive;
@@ -1899,75 +1905,219 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         text-decoration: none;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(1) {
+    main > section:nth-child(6) > section > section:nth-child(1) > div:nth-child(1) {
         background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment-01.JPG");
         background-size: cover;
         background-position: center;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(1) > a > p {
+    main > section:nth-child(6) > section > section > div:nth-child(1) > a > p {
         position: absolute;
         left: -33px;
         top: 230px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(2) {
+    main > section:nth-child(6) > section > section > div:nth-child(2) {
         background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment-02.JPG");
         background-size: cover;
         background-position: center;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(2) > a > p {
+    main > section:nth-child(6) > section > section > div:nth-child(2) > a > p {
         position: absolute;
         left: 152px;
         top: 230px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(3) {
+    main > section:nth-child(6) > section > section > div:nth-child(3) {
         background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment-03.JPG");
         background-size: cover;
         background-position: center;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(3) > a > p {
+    main > section:nth-child(6) > section > section > div:nth-child(3) > a > p {
         position: absolute;
         left: 340px;
         top: 230px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(4) {
+    main > section:nth-child(6) > section > section > div:nth-child(4) {
         background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment-04.JPG");
         background-size: cover;
         background-position: center;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(4) > a > p {
+    main > section:nth-child(6) > section > section > div:nth-child(4) > a > p {
         position: absolute;
         left: 526px;
         top: 230px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(5) {
+    main > section:nth-child(6) > section > section > div:nth-child(5) {
         background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment-05JPG.JPG");
         background-size: cover;
         background-position: center;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(5) > a > p {
+    main > section:nth-child(6) > section > section > div:nth-child(5) > a > p {
         position: absolute;
-        left: 711px;
+        left: 725px;
         top: 230px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(6) {
+    main > section:nth-child(6) > section > section > div:nth-child(6) {
         background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment-06.JPG");
         background-size: cover;
         background-position: center;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(6) > a > p {
+    main > section:nth-child(6) > section > section > div:nth-child(6) > a > p {
         position: absolute;
-        left: 898px;
+        left: 919px;
+        top: 230px;
+    }
+
+   main > section:nth-child(6) > section > section > div:nth-child(7) {
+        background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment_Transfer_Photo_01.JPG");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(7) > a > p {
+        position: absolute;
+        right: -107px;
+        top: 230px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(8) {
+        background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment_Transfer_Photo_02.JPG");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(8) > a > p {
+        position: absolute;
+        right: -307px;
+        top: 230px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(9) {
+        background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment_Ani_Photo_01.JPG");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(9) > a > p {
+        position: absolute;
+        right: -507px;
+        top: 230px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(10) {
+        background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment_Ani_Photo_02.JPG");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(10) > a > p {
+        position: absolute;
+        right: -707px;
+        top: 230px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(11) {
+    background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment_Ani_Photo_03.JPG");
+    background-size: cover;
+    background-position: center;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(11) > a > p {
+    position: absolute;
+    right: -900px;
+    top: 230px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(12) {
+        background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment_Ani_Photo_04.JPG");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(12) > a > p {
+        position: absolute;
+        right: -1092px;
+        top: 230px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(13) {
+        background: url("assets/image/MY Mock-Up Images/assignmentShots/pos.JPG");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(13) > a > p {
+        position: absolute;
+        right: -1288px;
+        top: 230px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(14) {
+        background: url("assets/image/MY Mock-Up Images/assignmentShots/jsQuePartOne.JPG");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(14) > a > p {
+        position: absolute;
+        right: -1482px;
+        top: 230px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(15) {
+        background: url("assets/image/MY Mock-Up Images/assignmentShots/jsQuePartTwo.JPG");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(15) > a > p {
+        position: absolute;
+        right: -1682px;
+        top: 230px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(16) {
+        background: url("assets/image/MY Mock-Up Images/assignmentShots/jsKnightRider.JPG");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(16) > a > p {
+        position: absolute;
+        right: -1882px;
+        top: 230px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(17) {
+        background: url("assets/image/MY Mock-Up Images/assignmentShots/jsCal.JPG");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(17) > a > p {
+        position: absolute;
+        right: -2082px;
+        top: 230px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(18) {
+        background: url("assets/image/MY Mock-Up Images/assignmentShots/spa.JPG");
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(18) > a > p {
+        position: absolute;
+        right: -2282px;
         top: 230px;
     }
 
