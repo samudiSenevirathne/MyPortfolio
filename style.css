@@ -12331,12 +12331,434 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
     }
 
 
-
 } /*ok*/
 
-@media all and (min-width:1024px) and (max-width:1440px) { /*alredy ok*/
+@media all and (min-width:1370px) and (max-width:1440px) { /*alredy ok*/
 
-}
+    header > nav > menu > li:nth-child(1){
+        border-radius: 25px 25px 0 25px;
+        background: #00A8FF;
+    }
+
+    header > div {
+        left: 0;
+        width: 0%;
+        height: 0%;
+        visibility: hidden;
+    }
+
+    main > section:nth-child(1){
+        position: relative;
+    }
+
+
+    main > section:nth-child(1) > aside > p{
+        position: absolute;
+    }
+
+    main > section:nth-child(1) > aside > p > em {
+        left: -53px;
+        top: 133px;
+    }
+
+    main > section:nth-child(1) > aside > div:nth-child(2) {
+        left: 10px;
+        top: 246px;
+    }
+
+    main > section:nth-child(1) > aside > a:nth-child(3) > img {
+        left: 30px;
+    }
+
+    main > section:nth-child(1) > aside > a:nth-child(4) > img {
+        left: 30px;
+    }
+
+    main > section:nth-child(1) > aside > a:nth-child(5) > img {
+        left: 30px;
+    }
+
+    main > section:nth-child(1) > aside > a:nth-child(6) > img {
+        left: 30px;
+    }
+
+    main > section:nth-child(1) > aside > a:nth-child(7) > img {
+        left: 30px;
+    }
+
+    main > section:nth-child(2) > aside > h1:nth-child(2) > dfn > b {
+        left: 661px;
+    }
+
+    main > section:nth-child(2) > aside > div:nth-child(3) {
+        left: 889px;
+    }
+
+    main > section:nth-child(2) > section > article {
+        position: absolute;
+        width: 58%;
+        height: 100%;
+    }
+
+
+    main > section:nth-child(2) > section > article > div:nth-child(7) {
+        top: 303px;
+    }
+
+    main > section:nth-child(2) > section > aside {
+        height: 100%;
+    }
+
+    main > section:nth-child(2) > section > aside:nth-child(2) > div:nth-child(1) {
+        left: 706px;
+        bottom: 40px;
+    }
+
+    main > section:nth-child(2) > section > aside:nth-child(2) > div:nth-child(2) {
+        left: 706px;
+        bottom: 40px;
+    }
+
+
+    main > section:nth-child(2) > section > aside:nth-child(2) > div:nth-child(3) {
+        left: 706px;
+        bottom: 40px;
+    }
+
+
+    main > section:nth-child(2) > section > aside:nth-child(2) > div:nth-child(4) {
+        left: 706px;
+        bottom: 40px;
+    }
+
+
+    main > section:nth-child(2) > section > aside:nth-child(2) > div:nth-child(5) {
+        left: 706px;
+        bottom: 40px;
+    }
+
+
+    main > section:nth-child(2) > section > aside:nth-child(2) > div:nth-child(6) {
+        left: 862px;
+        bottom: 42px;
+    }
+
+    main > section:nth-child(3) > aside > h1:nth-child(2) > dfn > b {
+        left: 661px;
+    }
+
+    main > section:nth-child(3) > aside > div:nth-child(3) {
+        left: 889px;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(4) {
+        left: 848px;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(6) {
+        left: 32px;
+    }
+    main > section:nth-child(3) > section > div:nth-child(7) {
+        left: 91px;
+    }
+    main > section:nth-child(3) > section > div:nth-child(8) {
+        left: 164px;
+    }
+    main > section:nth-child(3) > section > div:nth-child(9) {
+        left: 260px;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(10) {
+        left: 378px;
+    }
+    main > section:nth-child(3) > section > div:nth-child(11) {
+        left: 650px;
+    }
+    main > section:nth-child(3) > section > div:nth-child(12) {
+        left: 772px;
+    }
+    main > section:nth-child(3) > section > div:nth-child(13) {
+        left: 879px;
+    }
+    main > section:nth-child(3) > section > div:nth-child(14) {
+        left: 986px;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(15) {
+        height: 121px;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(16) {
+        left: 286px;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(17) {
+        left: 608px;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(18) {
+        left: 663px;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(19) {
+        left: 950px;
+        top: 431px;
+    }
+
+    main > section:nth-child(4) > aside > h1:nth-child(2) > dfn > b {
+        left: 635px;
+    }
+
+    main > section:nth-child(4) > aside > div:nth-child(3) {
+        left: 944px;
+    }
+
+
+    main > section:nth-child(4) > section > section:nth-child(1) {
+        left: 15px;
+    }
+
+    main > section:nth-child(4) > section > section:nth-child(2) {
+        left: 415px;
+    }
+
+    main > section:nth-child(4) > section > section:nth-child(3) {
+        left: 817px;
+    }
+
+    main > section:nth-child(5) > aside > h1:nth-child(2) > dfn > b {
+        left: 635px;
+    }
+
+    main > section:nth-child(5) > aside > div:nth-child(3) {
+        left: 944px;
+    }
+
+    main > section:nth-child(6) > aside > h1:nth-child(2) > dfn > b {
+        left: 600px;
+    }
+
+    main > section:nth-child(6) > aside > div:nth-child(3) {
+        left: 944px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(2) > a > p {
+        left: 162px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(3) > a > p {
+        left: 362px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(4) > a > p {
+        left: 571px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(5) > a > p {
+        left: 774px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(6) > a > p {
+        left: 983px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(8) > a > p {
+        right: -315px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(9) > a > p {
+        right: -521px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(10) > a > p {
+        right: -728px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(11) > a > p {
+        right: -931px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(12) > a > p {
+        right: -1135px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(13) > a > p {
+        right: -1344px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(14) > a > p {
+        right: -1549px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(15) > a > p {
+        right: -1754px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(16) > a > p {
+        right: -1957px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(17) > a > p {
+        right: -2168px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(18) > a > p {
+        right: -2370px;
+    }
+
+    main > section:nth-child(7) > aside > h1:nth-child(2) > dfn > b {
+        left: 661px;
+    }
+
+    main > section:nth-child(7) > aside > div:nth-child(3) {
+        left: 889px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(43) {
+        left: 1210px;
+    }
+
+    main > section:nth-child(7) > section > div:nth-child(5) {
+        left: 1008px;
+    }
+
+    main > section:nth-child(7) > section > div:nth-child(4) {
+        left: 758px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(10) {
+        left: 390px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(26) {
+        left: 434px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(27) {
+        left: 382px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(11) {
+        left: 386px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(29) {
+        left: 376px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(28) {
+        left: 428px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(12) {
+        left: 823px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(30) {
+        left: 802px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(31) {
+        left: 864px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(13) {
+        left: 834px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(32) {
+        left: 868px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(33) {
+        left: 813px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(14) {
+        left: 1036px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(34) {
+        left: 1016px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(35) {
+        left: 1076px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(15) {
+        left: 1043px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(36) {
+        left: 1081px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(37) {
+        left: 1029px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(16) {
+        left: 1191px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(38) {
+        left: 1175px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(39) {
+        left: 1229px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(17) {
+        left: 1195px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(40) {
+        left: 1184px;
+    }
+
+    main > section:nth-child(7) > section > img:nth-child(41) {
+        left: 1231px;
+    }
+
+    main > section:nth-child(8) > aside > h1:nth-child(2) > dfn > b {
+        left: 633px;
+    }
+
+    main > section:nth-child(8) > aside > div:nth-child(3) {
+        left: 889px;
+    }
+
+    main > section:nth-child(8) > section > section:nth-child(1) {
+        left: 30px;
+    }
+
+    main > section:nth-child(8) > section > section:nth-child(2) {
+        left: 444px;
+    }
+
+    main > section:nth-child(8) > section > section:nth-child(2) > img {
+        top: 115px;
+    }
+
+    main > section:nth-child(8) > section > section:nth-child(3) {
+        left: 842px;
+    }
+
+    main > section:nth-child(9) > aside > h1:nth-child(2) > dfn > b {
+        left: 637px;
+    }
+
+    main > section:nth-child(9) > aside > div:nth-child(3) {
+        left: 889px;
+    }
+
+    footer > p {
+        left: 559px;
+    }
+
+} /*ok*/
 
 
 
