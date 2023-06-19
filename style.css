@@ -6259,8 +6259,6 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         visibility: hidden;
     }
 
-
-
     main > section:nth-child(6) > aside > div:nth-child(1) {
         width: 27%;
         left: 26px;
@@ -6276,47 +6274,88 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         left: 236px;
     }
 
-    main > section:nth-child(6) > section > div {
-        height: 75%;
-        width: 9%;
+    main > section:nth-child(6) > section > section > div {
+        width: 4%;
     }
 
-    main > section:nth-child(6) > section > div > a > p {
+    main > section:nth-child(6) > section > section > div > a > p {
         font-size: 164%;
+        animation: 3s linear 2s infinite running smallAniColor;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(1) > a > p {
-        left: -58px;
-        top: 230px;
+    main > section:nth-child(6) > section > section > div:nth-child(1) > a > p {
+        left: -37px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(2) > a > p {
-        left: -7px;
-        top: 230px;
+    main > section:nth-child(6) > section > section > div:nth-child(2) > a > p {
+        left: 20px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(3) > a > p {
-        left: 46px;
-        top: 230px;
+    main > section:nth-child(6) > section > section > div:nth-child(3) > a > p {
+        left: 73px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(4) > a > p {
-        left: 97px;
-        top: 230px;
+    main > section:nth-child(6) > section > section > div:nth-child(4) > a > p {
+        left: 126px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(5) > a > p {
-        left: 149px;
-        top: 230px;
+    main > section:nth-child(6) > section > section > div:nth-child(5) > a > p {
+        left: 182px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(6) > a > p {
-        left: 191px;
+    main > section:nth-child(6) > section > section > div:nth-child(6) > a > p {
+        left: 225px;
         top: 219px;
         width: 157px;
     }
 
+    main > section:nth-child(6) > section > section > div:nth-child(7) > a > p {
+        right: -99px;
+    }
 
+    main > section:nth-child(6) > section > section > div:nth-child(8) > a > p {
+        right: -153px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(9) > a > p {
+        right: -207px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(10) > a > p {
+        right: -261px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(11) > a > p {
+        right: -316px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(12) > a > p {
+        right: -370px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(13) > a > p {
+        right: -427px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(14) > a > p {
+        right: -480px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(15) > a > p {
+        right: -534px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(16) > a > p {
+        right: -589px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(17) > a > p {
+        right: -644px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(18) > a > p {
+        right: -699px;
+    }
 
     main > section:nth-child(7) > aside > div:nth-child(1) {
         width: 27%;
@@ -8311,6 +8350,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
 
         main > section:nth-child(6) > section > section > div > a > p {
             font-size: 135%;
+            animation: 3s linear 2s infinite running smallAniColor;
         }
 
         main > section:nth-child(6) > section > section > div:nth-child(1) > a > p {
