@@ -4236,47 +4236,89 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         left: 215px;
     }
 
-    main > section:nth-child(6) > section > div {
+    main > section:nth-child(6) > section > section > div {
         height: 75%;
-        width: 9%;
+        width: 4%;
     }
 
-    main > section:nth-child(6) > section > div > a > p {
+    main > section:nth-child(6) > section > section > div > a > p {
         font-size: 144%;
+        animation: 3s linear 2s infinite running smallAniColor;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(1) > a > p {
-        left: -52px;
-        top: 230px;
+    main > section:nth-child(6) > section > section > div:nth-child(1) > a > p {
+        left: -34px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(2) > a > p {
-        left: -7px;
-        top: 230px;
+    main > section:nth-child(6) > section >section > div:nth-child(2) > a > p {
+        left: 12px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(3) > a > p {
-        left: 37px;
-        top: 230px;
+    main > section:nth-child(6) > section >section > div:nth-child(3) > a > p {
+        left: 60px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(4) > a > p {
-        left: 82px;
-        top: 230px;
+    main > section:nth-child(6) > section >section > div:nth-child(4) > a > p {
+        left: 105px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(5) > a > p {
-        left: 127px;
-        top: 230px;
+    main > section:nth-child(6) > section >section > div:nth-child(5) > a > p {
+        left: 154px;
     }
 
-    main > section:nth-child(6) > section > div:nth-child(6) > a > p {
-        left: 153px;
+    main > section:nth-child(6) > section >section > div:nth-child(6) > a > p {
+        left: 183px;
         top: 214px;
         width: 157px;
     }
 
+    main > section:nth-child(6) > section > section > div:nth-child(7) > a > p {
+        right: -85px;
+    }
 
+    main > section:nth-child(6) > section > section > div:nth-child(8) > a > p {
+        right: -134px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(9) > a > p {
+        right: -180px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(10) > a > p {
+        right: -225px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(11) > a > p {
+        right: -274px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(12) > a > p {
+        right: -319px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(13) > a > p {
+        right: -366px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(14) > a > p {
+        right: -414px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(15) > a > p {
+        right: -459px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(16) > a > p {
+        right: -506px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(17) > a > p {
+        right: -553px;
+    }
+
+    main > section:nth-child(6) > section > section > div:nth-child(18) > a > p {
+        right: -599px;
+    }
 
     main > section:nth-child(7) > aside > div:nth-child(1) {
         width: 27%;
