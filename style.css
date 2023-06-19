@@ -1087,6 +1087,7 @@ main>section{
         top: 480px;
         background: #15C1EC;
         border-radius: 100%;
+        cursor: pointer;
     }
 
     main > section:nth-child(3) > section > div:nth-child(18) {
@@ -1097,6 +1098,7 @@ main>section{
         top: 480px;
         background: #15C1EC;
         border-radius: 100%;
+        cursor: pointer;
     }
 
     main > section:nth-child(3) > section > div:nth-child(19) {

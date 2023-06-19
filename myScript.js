@@ -55,3 +55,36 @@ $("#certificateNine").click(function () {
     $("#certificateFive").css('background-image', backgroundUrl);
     $("#certificateNine").css('background-image', backgroundUrl2);
 });
+
+
+$("#btnOne").click(function () {
+    var backgroundUrlFive1 = $("#certificateFive").css('background-image');
+    var backgroundUrl1 =$("#certificateFour").css('background-image');
+    var backgroundUrl2 =$("#certificateThree").css('background-image');
+    var backgroundUrl3 =$("#certificateTwo").css('background-image')
+    var backgroundUrl4 =$("#certificateOne").css('background-image');
+    var backgroundUrl5 =$("#certificateNine").css('background-image');
+    var backgroundUrl6 =$("#certificateEight").css('background-image');
+    var backgroundUrl7 =$("#certificateSeven").css('background-image');
+    var backgroundUrl8 = $("#certificateSix").css('background-image');
+
+    $("#certificateFour").css('background-image', backgroundUrlFive1);
+    $("#certificateThree").css('background-image', backgroundUrl1);
+    $("#certificateTwo").css('background-image',backgroundUrl2 );
+    $("#certificateOne").css('background-image',backgroundUrl3 );
+    $("#certificateNine").css('background-image', backgroundUrl4);
+    $("#certificateEight").css('background-image',backgroundUrl5 );
+    $("#certificateSeven").css('background-image', backgroundUrl6);
+    $("#certificateSix").css('background-image', backgroundUrl7);
+    $("#certificateFive").css('background-image',backgroundUrl8);
+
+    // var backgroundUrlFive2 = $("#certificateFive").css('background-image');
+    //
+    // if(backgroundUrlFive1 === backgroundUrlFive2){
+    //     $("#btnOne").css('cursor','not-allowed');
+    // }
+
+});
+
+
+
