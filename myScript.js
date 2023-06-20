@@ -56,68 +56,110 @@ $("#certificateNine").click(function () {
     $("#certificateNine").css('background-image', backgroundUrl2);
 });
 
-var count=0;
 
-$("#btnOne").click(function () {
- count++;
+let count=0;
+let count2=0;
+
+function btnOneFuntions() {
+    count++;
     var backgroundUrlFive1 = $("#certificateFive").css('background-image');
-    var backgroundUrl1 =$("#certificateFour").css('background-image');
-    var backgroundUrl2 =$("#certificateThree").css('background-image');
-    var backgroundUrl3 =$("#certificateTwo").css('background-image')
-    var backgroundUrl4 =$("#certificateOne").css('background-image');
-    var backgroundUrl5 =$("#certificateNine").css('background-image');
-    var backgroundUrl6 =$("#certificateEight").css('background-image');
-    var backgroundUrl7 =$("#certificateSeven").css('background-image');
+    var backgroundUrl1 = $("#certificateFour").css('background-image');
+    var backgroundUrl2 = $("#certificateThree").css('background-image');
+    var backgroundUrl3 = $("#certificateTwo").css('background-image')
+    var backgroundUrl4 = $("#certificateOne").css('background-image');
+    var backgroundUrl5 = $("#certificateNine").css('background-image');
+    var backgroundUrl6 = $("#certificateEight").css('background-image');
+    var backgroundUrl7 = $("#certificateSeven").css('background-image');
     var backgroundUrl8 = $("#certificateSix").css('background-image');
 
     $("#certificateFour").css('background-image', backgroundUrlFive1);
     $("#certificateThree").css('background-image', backgroundUrl1);
-    $("#certificateTwo").css('background-image',backgroundUrl2 );
-    $("#certificateOne").css('background-image',backgroundUrl3 );
+    $("#certificateTwo").css('background-image', backgroundUrl2);
+    $("#certificateOne").css('background-image', backgroundUrl3);
     $("#certificateNine").css('background-image', backgroundUrl4);
-    $("#certificateEight").css('background-image',backgroundUrl5 );
+    $("#certificateEight").css('background-image', backgroundUrl5);
     $("#certificateSeven").css('background-image', backgroundUrl6);
     $("#certificateSix").css('background-image', backgroundUrl7);
-    $("#certificateFive").css('background-image',backgroundUrl8);
+    $("#certificateFive").css('background-image', backgroundUrl8);
 
-    if(count==9){
-        $("#btnOne").css('opacity','0.5');
-        $("#btnOne").css('cursor','not-allowed');
-        $("#btnOne").off('click').addClass('#btnOne');
+    if (count == 9) {
+        $("#btnOne").css('opacity', '0.5');
+        $("#btnOne").css('cursor', 'not-allowed');
+        $("#btnOne").off('click').addClass('btnOne');
     }
-});
+}
 
-var count2=0;
-
-$("#btnTwo").click(function () {
+function btnTwoFuntions() {
     count2++;
     var backgroundUrlFive1 = $("#certificateFive").css('background-image');
     var backgroundUrl1 = $("#certificateSix").css('background-image');
-    var backgroundUrl2 =$("#certificateSeven").css('background-image');
-    var backgroundUrl3 =$("#certificateEight").css('background-image');
-    var backgroundUrl4 =$("#certificateNine").css('background-image');
-    var backgroundUrl5 =$("#certificateOne").css('background-image');
-    var backgroundUrl6 =$("#certificateTwo").css('background-image');
-    var backgroundUrl7 =$("#certificateThree").css('background-image');
-    var backgroundUrl8 =$("#certificateFour").css('background-image');
+    var backgroundUrl2 = $("#certificateSeven").css('background-image');
+    var backgroundUrl3 = $("#certificateEight").css('background-image');
+    var backgroundUrl4 = $("#certificateNine").css('background-image');
+    var backgroundUrl5 = $("#certificateOne").css('background-image');
+    var backgroundUrl6 = $("#certificateTwo").css('background-image');
+    var backgroundUrl7 = $("#certificateThree").css('background-image');
+    var backgroundUrl8 = $("#certificateFour").css('background-image');
 
     $("#certificateSix").css('background-image', backgroundUrlFive1);
     $("#certificateSeven").css('background-image', backgroundUrl1);
-    $("#certificateEight").css('background-image',backgroundUrl2 );
-    $("#certificateNine").css('background-image',backgroundUrl3 );
+    $("#certificateEight").css('background-image', backgroundUrl2);
+    $("#certificateNine").css('background-image', backgroundUrl3);
     $("#certificateOne").css('background-image', backgroundUrl4);
-    $("#certificateTwo").css('background-image',backgroundUrl5 );
+    $("#certificateTwo").css('background-image', backgroundUrl5);
     $("#certificateThree").css('background-image', backgroundUrl6);
     $("#certificateFour").css('background-image', backgroundUrl7);
-    $("#certificateFive").css('background-image',backgroundUrl8);
+    $("#certificateFive").css('background-image', backgroundUrl8);
 
-    if(count2==9){
-        $("#btnTwo").css('opacity','0.5');
-        $("#btnTwo").css('cursor','not-allowed');
-        $("#btnTwo").off('click').addClass('#btnTwo');
+    if (count2 == 9) {
+        $("#btnTwo").css('opacity', '0.5');
+        $("#btnTwo").css('cursor', 'not-allowed');
+        $("#btnTwo").off('click').addClass('btnTwo');
     }
-});
+}
 
+function btnTwoReset() {
+    $("#btnTwo").css('opacity','1');
+    $("#btnTwo").css('cursor','pointer');
+    $("#btnTwo").on("click",function () {
+        btnTwoCheckPoint();
+        btnTwoFuntions();
+    });
+}
 
+function btnOneReset() {
+    $("#btnOne").css('opacity','1');
+    $("#btnOne").css('cursor','pointer');
+    $("#btnOne").on("click",function () {
+        btnOneCheckPoint();
+        btnOneFuntions();
+    });
+}
+
+function btnOneCheckPoint() {
+    var buttonOpacity = $("#btnTwo").css('opacity');
+    if (parseFloat(buttonOpacity) < 1) {
+        btnTwoReset();
+        count2 = 0;
+    }
+}
+
+function btnTwoCheckPoint() {
+    var buttonOpacity2 = $("#btnOne").css('opacity');
+    if (parseFloat(buttonOpacity2) < 1) {
+        btnOneReset();
+        count = 0;
+    }
+}
+
+    $("#btnOne").click(function () {
+        btnOneCheckPoint();
+        btnOneFuntions();
+    });
+
+    $("#btnTwo").click(function () {
+        btnTwoCheckPoint();
+        btnTwoFuntions();
+    });
 
 
