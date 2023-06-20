@@ -87,4 +87,37 @@ $("#btnOne").click(function () {
     }
 });
 
+var count2=0;
+
+$("#btnTwo").click(function () {
+    count2++;
+    var backgroundUrlFive1 = $("#certificateFive").css('background-image');
+    var backgroundUrl1 = $("#certificateSix").css('background-image');
+    var backgroundUrl2 =$("#certificateSeven").css('background-image');
+    var backgroundUrl3 =$("#certificateEight").css('background-image');
+    var backgroundUrl4 =$("#certificateNine").css('background-image');
+    var backgroundUrl5 =$("#certificateOne").css('background-image');
+    var backgroundUrl6 =$("#certificateTwo").css('background-image');
+    var backgroundUrl7 =$("#certificateThree").css('background-image');
+    var backgroundUrl8 =$("#certificateFour").css('background-image');
+
+    $("#certificateSix").css('background-image', backgroundUrlFive1);
+    $("#certificateSeven").css('background-image', backgroundUrl1);
+    $("#certificateEight").css('background-image',backgroundUrl2 );
+    $("#certificateNine").css('background-image',backgroundUrl3 );
+    $("#certificateOne").css('background-image', backgroundUrl4);
+    $("#certificateTwo").css('background-image',backgroundUrl5 );
+    $("#certificateThree").css('background-image', backgroundUrl6);
+    $("#certificateFour").css('background-image', backgroundUrl7);
+    $("#certificateFive").css('background-image',backgroundUrl8);
+
+    if(count2==9){
+        $("#btnTwo").css('opacity','0.5');
+        $("#btnTwo").css('cursor','not-allowed');
+        $("#btnTwo").off('click').addClass('#btnTwo');
+    }
+});
+
+
+
 
