@@ -56,8 +56,10 @@ $("#certificateNine").click(function () {
     $("#certificateNine").css('background-image', backgroundUrl2);
 });
 
+var count=0;
 
 $("#btnOne").click(function () {
+ count++;
     var backgroundUrlFive1 = $("#certificateFive").css('background-image');
     var backgroundUrl1 =$("#certificateFour").css('background-image');
     var backgroundUrl2 =$("#certificateThree").css('background-image');
@@ -78,13 +80,11 @@ $("#btnOne").click(function () {
     $("#certificateSix").css('background-image', backgroundUrl7);
     $("#certificateFive").css('background-image',backgroundUrl8);
 
-    // var backgroundUrlFive2 = $("#certificateFive").css('background-image');
-    //
-    // if(backgroundUrlFive1 === backgroundUrlFive2){
-    //     $("#btnOne").css('cursor','not-allowed');
-    // }
-
+    if(count==9){
+        $("#btnOne").css('opacity','0.5');
+        $("#btnOne").css('cursor','not-allowed');
+        $("#btnOne").off('click').addClass('#btnOne');
+    }
 });
-
 
 
