@@ -1,6 +1,9 @@
 //section 3
+const sound = document.getElementById('sound');
+const errorSound = document.getElementById('errorSound');
 
 $("#certificateOne").click(function () {
+      sound.play();
        var backgroundUrl = $("#certificateOne").css('background-image');
        var backgroundUrl2 = $("#certificateFive").css('background-image');
        $("#certificateFive").css('background-image', backgroundUrl);
@@ -10,6 +13,7 @@ $("#certificateOne").click(function () {
 });
 
 $("#certificateTwo").click(function () {
+    sound.play();
     var backgroundUrl = $("#certificateTwo").css('background-image');
     var backgroundUrl2 = $("#certificateFive").css('background-image');
     $("#certificateFive").css('background-image', backgroundUrl);
@@ -17,6 +21,7 @@ $("#certificateTwo").click(function () {
 });
 
 $("#certificateThree").click(function () {
+    sound.play();
     var backgroundUrl = $("#certificateThree").css('background-image');
     var backgroundUrl2 = $("#certificateFive").css('background-image');
     $("#certificateFive").css('background-image', backgroundUrl);
@@ -24,13 +29,19 @@ $("#certificateThree").click(function () {
 });
 
 $("#certificateFour").click(function () {
+    sound.play();
     var backgroundUrl = $("#certificateFour").css('background-image');
     var backgroundUrl2 = $("#certificateFive").css('background-image');
     $("#certificateFive").css('background-image', backgroundUrl);
     $("#certificateFour").css('background-image', backgroundUrl2);
 });
 
+$("#certificateFive").click(function () {
+    errorSound.play();
+});
+
 $("#certificateSix").click(function () {
+    sound.play();
     var backgroundUrl = $("#certificateSix").css('background-image');
     var backgroundUrl2 = $("#certificateFive").css('background-image');
     $("#certificateFive").css('background-image', backgroundUrl);
@@ -38,6 +49,7 @@ $("#certificateSix").click(function () {
 });
 
 $("#certificateSeven").click(function () {
+    sound.play();
     var backgroundUrl = $("#certificateSeven").css('background-image');
     var backgroundUrl2 = $("#certificateFive").css('background-image');
     $("#certificateFive").css('background-image', backgroundUrl);
@@ -45,6 +57,7 @@ $("#certificateSeven").click(function () {
 });
 
 $("#certificateEight").click(function () {
+    sound.play();
     var backgroundUrl = $("#certificateEight").css('background-image');
     var backgroundUrl2 = $("#certificateFive").css('background-image');
     $("#certificateFive").css('background-image', backgroundUrl);
@@ -52,6 +65,7 @@ $("#certificateEight").click(function () {
 });
 
 $("#certificateNine").click(function () {
+    sound.play();
     var backgroundUrl = $("#certificateNine").css('background-image');
     var backgroundUrl2 = $("#certificateFive").css('background-image');
     $("#certificateFive").css('background-image', backgroundUrl);
@@ -156,11 +170,21 @@ function btnTwoCheckPoint() {
     $("#btnOne").click(function () {
         btnOneCheckPoint();
         btnOneFuntions();
+        if($("#btnOne").css('cursor')=='not-allowed') {
+            errorSound.play();
+        }else{
+            sound.play();
+        }
     });
 
     $("#btnTwo").click(function () {
         btnTwoCheckPoint();
         btnTwoFuntions();
+        if($("#btnOne").css('cursor')=='not-allowed') {
+            errorSound.play();
+        }else{
+            sound.play();
+        }
     });
 
 
