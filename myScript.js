@@ -180,7 +180,7 @@ function btnTwoCheckPoint() {
     $("#btnTwo").click(function () {
         btnTwoCheckPoint();
         btnTwoFuntions();
-        if($("#btnOne").css('cursor')=='not-allowed') {
+        if($("#btnTwo").css('cursor')=='not-allowed') {
             errorSound.play();
         }else{
             sound.play();
@@ -310,6 +310,7 @@ setInterval(checkWindowWidth,3000);
 //section 7
 
 $("#imageOne").click(function () {
+    sound.play();
     var backgroundUrl = $("#imageOne").css('background-image');
     var backgroundUrl2 = $("#imageThree").css('background-image');
     $("#imageThree").css('background-image', backgroundUrl);
@@ -317,13 +318,19 @@ $("#imageOne").click(function () {
 });
 
 $("#imageTwo").click(function () {
+    sound.play();
     var backgroundUrl = $("#imageTwo").css('background-image');
     var backgroundUrl2 = $("#imageThree").css('background-image');
     $("#imageThree").css('background-image', backgroundUrl);
     $("#imageTwo").css('background-image', backgroundUrl2);
 });
 
+$("#imageThree").click(function () {
+ errorSound.play();
+});
+
 $("#imageFour").click(function () {
+    sound.play();
     var backgroundUrl = $("#imageFour").css('background-image');
     var backgroundUrl2 = $("#imageThree").css('background-image');
     $("#imageThree").css('background-image', backgroundUrl);
@@ -331,6 +338,7 @@ $("#imageFour").click(function () {
 });
 
 $("#imageFive").click(function () {
+    sound.play();
     var backgroundUrl = $("#imageFive").css('background-image');
     var backgroundUrl2 = $("#imageThree").css('background-image');
     $("#imageThree").css('background-image', backgroundUrl);
@@ -421,10 +429,20 @@ function buttonTwoCheckPoint() {
 $("#imbtnOne").click(function () {
     buttonOneCheckPoint();
     buttonOneFuntions();
+    if($("#imbtnOne").css('cursor')=='not-allowed') {
+        errorSound.play();
+    }else{
+        sound.play();
+    }
 });
 
 $("#imbtnTwo").click(function () {
     buttonTwoCheckPoint();
     buttonTwoFuntions();
+    if($("#imbtnTwo").css('cursor')=='not-allowed') {
+        errorSound.play();
+    }else{
+        sound.play();
+    }
 });
 
