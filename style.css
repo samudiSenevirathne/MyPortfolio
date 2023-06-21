@@ -953,6 +953,11 @@ main>section{
         cursor: pointer;
     }
 
+     main > section:nth-child(3) > section > div:nth-child(6):hover {/*new Transaction*/
+         border:5px solid #00A8FF;
+         box-shadow: 1px 0 20px 6px #00A8FF;
+    }
+
     main > section:nth-child(3) > section > div:nth-child(7) {
         position: absolute;
         width: 300px;
@@ -964,6 +969,11 @@ main>section{
         background-position: center;
         z-index: 6;
         cursor: pointer;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(7):hover {/*new Transaction*/
+        border:5px solid #00A8FF;
+        box-shadow: 1px 0 20px 6px #00A8FF;
     }
 
     main > section:nth-child(3) > section > div:nth-child(8) {
@@ -979,6 +989,11 @@ main>section{
         cursor: pointer;
     }
 
+    main > section:nth-child(3) > section > div:nth-child(8):hover {/*new Transaction*/
+        border:5px solid #00A8FF;
+        box-shadow: 1px 0 20px 6px #00A8FF;
+    }
+
     main > section:nth-child(3) > section > div:nth-child(9) {
         position: absolute;
         width: 391px;
@@ -990,6 +1005,11 @@ main>section{
         background-position: center;
         z-index: 8;
         cursor: pointer;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(9):hover {/*new Transaction*/
+        border:5px solid #00A8FF;
+        box-shadow: 1px 0 20px 6px #00A8FF;
     }
 
     main > section:nth-child(3) > section > div:nth-child(10) {
@@ -1005,6 +1025,11 @@ main>section{
         cursor: not-allowed;
     }
 
+    main > section:nth-child(3) > section > div:nth-child(10):hover {/*new Transaction*/
+        border:1px solid red;
+        box-shadow: 1px 0 20px 6px red;
+    }
+
     main > section:nth-child(3) > section > div:nth-child(11) {
         position: absolute;
         width: 391px;
@@ -1016,6 +1041,11 @@ main>section{
         background-position: center;
         z-index: 8;
         cursor: pointer;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(11):hover {/*new Transaction*/
+        border:5px solid #00A8FF;
+        box-shadow: 1px 0 20px 6px #00A8FF;
     }
 
     main > section:nth-child(3) > section > div:nth-child(12) {
@@ -1031,6 +1061,11 @@ main>section{
         cursor: pointer;
     }
 
+    main > section:nth-child(3) > section > div:nth-child(12):hover {/*new Transaction*/
+        border:5px solid #00A8FF;
+        box-shadow: 1px 0 20px 6px #00A8FF;
+    }
+
     main > section:nth-child(3) > section > div:nth-child(13) {
         position: absolute;
         width: 300px;
@@ -1044,6 +1079,11 @@ main>section{
         cursor: pointer;
     }
 
+    main > section:nth-child(3) > section > div:nth-child(13):hover {/*new Transaction*/
+        border:5px solid #00A8FF;
+        box-shadow: 1px 0 20px 6px #00A8FF;
+    }
+
     main > section:nth-child(3) > section > div:nth-child(14) {
         position: absolute;
         width: 250px;
@@ -1055,6 +1095,11 @@ main>section{
         background-position: center;
         z-index: 5;
         cursor: pointer;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(14):hover {/*new Transaction*/
+        border:5px solid #00A8FF;
+        box-shadow: 1px 0 20px 6px #00A8FF;
     }
 
     main > section:nth-child(3) > section > div:nth-child(15) {
