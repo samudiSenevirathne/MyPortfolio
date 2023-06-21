@@ -38,7 +38,9 @@ main>section{
         /*width: 1200px;*/
         width: 88%;
         background: #24144C;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border:5px solid #24144C;
+        box-shadow: 1px 0 20px 6px #24144C;
+        /*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);*/
     }
 
     main > section:nth-child(1) {
