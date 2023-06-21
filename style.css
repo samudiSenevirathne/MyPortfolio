@@ -2445,6 +2445,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         height: 20px;
         top: 245px;
         left: 5px;
+        cursor:pointer;
     }
 
     main > section:nth-child(7) > section > img:nth-child(43) {
@@ -2453,6 +2454,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         height: 20px;
         top: 245px;
         left: 1151px;
+        cursor:pointer;
     }
 
 

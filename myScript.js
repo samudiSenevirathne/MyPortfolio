@@ -1,3 +1,5 @@
+//section 3
+
 $("#certificateOne").click(function () {
        var backgroundUrl = $("#certificateOne").css('background-image');
        var backgroundUrl2 = $("#certificateFive").css('background-image');
@@ -55,7 +57,6 @@ $("#certificateNine").click(function () {
     $("#certificateFive").css('background-image', backgroundUrl);
     $("#certificateNine").css('background-image', backgroundUrl2);
 });
-
 
 let count=0;
 let count2=0;
@@ -162,7 +163,6 @@ function btnTwoCheckPoint() {
         btnTwoFuntions();
     });
 
-var windowWidth = $(window).width();
 
 function logoRotation() {
     var logoUrl = $("#logoOne").css('background-image');
@@ -258,6 +258,9 @@ function logoRotation() {
 }
 
 function checkWindowWidth() {
+
+    let windowWidth = $(window).width();
+
     if (windowWidth>= 1370 && windowWidth <= 1440) {
         logoRotation();
     } else if (windowWidth >= 769 && windowWidth <= 1024) {
@@ -280,4 +283,97 @@ setInterval(checkWindowWidth,3000);
 // setInterval(function () {
 // }, 3000);
 
+
+//section 7
+
+let imageBtnCount1=0;
+let imageBtnCount2=0;
+
+function buttonOneFuntions() {
+    imageBtnCount1++;
+    var backgroundUrl1 = $("#imageOne").css('background-image');
+    var backgroundUrl2 = $("#imageTwo").css('background-image');
+    var backgroundUrl3 = $("#imageThree").css('background-image');
+    var backgroundUrl4 = $("#imageFour").css('background-image')
+    var backgroundUrl5 = $("#imageFive").css('background-image');
+
+    $("#imageTwo").css('background-image', backgroundUrl3);
+    $("#imageOne").css('background-image', backgroundUrl2);
+    $("#imageFive").css('background-image', backgroundUrl1);
+    $("#imageFour").css('background-image', backgroundUrl5);
+    $("#imageThree").css('background-image', backgroundUrl4);
+
+
+    if (imageBtnCount1 == 5) {
+        $("#imbtnOne").css('opacity', '0.5');
+        $("#imbtnOne").css('cursor', 'not-allowed');
+        $("#imbtnOne").off('click').addClass('imbtnOne');
+    }
+}
+
+function buttonTwoFuntions() {
+    imageBtnCount2++;
+
+    var backgroundUrl1 = $("#imageOne").css('background-image');
+    var backgroundUrl2 = $("#imageTwo").css('background-image');
+    var backgroundUrl3 = $("#imageThree").css('background-image');
+    var backgroundUrl4 = $("#imageFour").css('background-image')
+    var backgroundUrl5 = $("#imageFive").css('background-image');
+
+    $("#imageFour").css('background-image', backgroundUrl3);
+    $("#imageFive").css('background-image', backgroundUrl4);
+    $("#imageOne").css('background-image', backgroundUrl5);
+    $("#imageTwo").css('background-image', backgroundUrl1);
+    $("#imageThree").css('background-image', backgroundUrl2);
+
+    if (imageBtnCount2 == 5) {
+        $("#imbtnTwo").css('opacity', '0.5');
+        $("#imbtnTwo").css('cursor', 'not-allowed');
+        $("#imbtnTwo").off('click').addClass('imbtnTwo');
+    }
+}
+
+function buttonTwoReset() {
+    $("#imbtnTwo").css('opacity','1');
+    $("#imbtnTwo").css('cursor','pointer');
+    $("#imbtnTwo").on("click",function () {
+        buttonTwoCheckPoint();
+        buttonTwoFuntions();
+    });
+}
+
+function buttonOneReset() {
+    $("#imbtnOne").css('opacity','1');
+    $("#imbtnOne").css('cursor','pointer');
+    $("#imbtnOne").on("click",function () {
+        buttonOneCheckPoint();
+        buttonOneFuntions();
+    });
+}
+
+function buttonOneCheckPoint() {
+    var buttonOpacity = $("#imbtnTwo").css('opacity');
+    if (parseFloat(buttonOpacity) < 1) {
+        buttonTwoReset();
+        imageBtnCount2=0;
+    }
+}
+
+function buttonTwoCheckPoint() {
+    var buttonOpacity2 = $("#imbtnOne").css('opacity');
+    if (parseFloat(buttonOpacity2) < 1) {
+        buttonOneReset();
+        imageBtnCount1=0;
+    }
+}
+
+$("#imbtnOne").click(function () {
+    buttonOneCheckPoint();
+    buttonOneFuntions();
+});
+
+$("#imbtnTwo").click(function () {
+    buttonTwoCheckPoint();
+    buttonTwoFuntions();
+});
 
