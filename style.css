@@ -2193,7 +2193,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         background-size: cover;
         background-position: center;
         z-index: 1;
-
+        cursor:pointer;
     }
 
     main > section:nth-child(7) > section > div:nth-child(2) {
@@ -2205,6 +2205,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         background-size: cover;
         background-position: center;
         z-index: 2;
+        cursor:pointer;
 
     }
 
@@ -2220,6 +2221,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         background-size: cover;
         background-position: center;
         z-index: 3;
+        cursor:not-allowed;
     }
 
     main > section:nth-child(7) > section > div:nth-child(4) {
@@ -2231,6 +2233,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         background-size: cover;
         background-position: center;
         z-index: 2;
+        cursor:pointer;
     }
 
     main > section:nth-child(7) > section > div:nth-child(5) {
@@ -2242,6 +2245,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         background-size: cover;
         background-position: center;
         z-index: 1;
+        cursor:pointer;
     }
 
 

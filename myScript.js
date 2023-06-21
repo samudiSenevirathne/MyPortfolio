@@ -286,6 +286,20 @@ setInterval(checkWindowWidth,3000);
 
 //section 7
 
+$("#imageOne").click(function () {
+    var backgroundUrl = $("#imageOne").css('background-image');
+    var backgroundUrl2 = $("#imageThree").css('background-image');
+    $("#imageThree").css('background-image', backgroundUrl);
+    $("#imageOne").css('background-image', backgroundUrl2);
+});
+
+
+
+
+
+
+
+
 let imageBtnCount1=0;
 let imageBtnCount2=0;
 
