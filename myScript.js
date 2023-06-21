@@ -293,7 +293,12 @@ $("#imageOne").click(function () {
     $("#imageOne").css('background-image', backgroundUrl2);
 });
 
-
+$("#imageTwo").click(function () {
+    var backgroundUrl = $("#imageTwo").css('background-image');
+    var backgroundUrl2 = $("#imageThree").css('background-image');
+    $("#imageThree").css('background-image', backgroundUrl);
+    $("#imageTwo").css('background-image', backgroundUrl2);
+});
 
 
 
