@@ -283,7 +283,6 @@ setInterval(checkWindowWidth,3000);
 // setInterval(function () {
 // }, 3000);
 
-
 //section 7
 
 $("#imageOne").click(function () {
@@ -300,10 +299,19 @@ $("#imageTwo").click(function () {
     $("#imageTwo").css('background-image', backgroundUrl2);
 });
 
+$("#imageFour").click(function () {
+    var backgroundUrl = $("#imageFour").css('background-image');
+    var backgroundUrl2 = $("#imageThree").css('background-image');
+    $("#imageThree").css('background-image', backgroundUrl);
+    $("#imageFour").css('background-image', backgroundUrl2);
+});
 
-
-
-
+$("#imageFive").click(function () {
+    var backgroundUrl = $("#imageFive").css('background-image');
+    var backgroundUrl2 = $("#imageThree").css('background-image');
+    $("#imageThree").css('background-image', backgroundUrl);
+    $("#imageFive").css('background-image', backgroundUrl2);
+});
 
 let imageBtnCount1=0;
 let imageBtnCount2=0;
