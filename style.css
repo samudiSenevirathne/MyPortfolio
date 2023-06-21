@@ -1147,6 +1147,11 @@ main>section{
         cursor: pointer;
     }
 
+    main > section:nth-child(3) > section > div:nth-child(17):hover { /*new Transaction*/
+        transform: scale(1.2, 1.2);
+        box-shadow: 1px 0 20px 6px #00A8FF;
+    }
+
     main > section:nth-child(3) > section > div:nth-child(18) {
         position: absolute;
         width: 15px;
@@ -1156,6 +1161,11 @@ main>section{
         background: #15C1EC;
         border-radius: 100%;
         cursor: pointer;
+    }
+
+    main > section:nth-child(3) > section > div:nth-child(18):hover { /*new Transaction*/
+        transform: scale(1.2, 1.2);
+        box-shadow: 1px 0 20px 6px #00A8FF;
     }
 
     main > section:nth-child(3) > section > div:nth-child(19) {

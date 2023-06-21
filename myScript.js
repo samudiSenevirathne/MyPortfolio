@@ -100,7 +100,10 @@ function btnOneFuntions() {
     if (count == 9) {
         $("#btnOne").css('opacity', '0.5');
         $("#btnOne").css('cursor', 'not-allowed');
+        $("#btnOne:hover").css('transform', 'none');
+        $("#btnOne:hover").css('box-shadow', 'none');
         $("#btnOne").off('click').addClass('btnOne');
+            errorSound.play();
     }
 }
 
@@ -129,7 +132,10 @@ function btnTwoFuntions() {
     if (count2 == 9) {
         $("#btnTwo").css('opacity', '0.5');
         $("#btnTwo").css('cursor', 'not-allowed');
+        $("#btnTwo:hover").css('transform', 'none');
+        $("#btnTwo:hover").css('box-shadow', 'none');
         $("#btnTwo").off('click').addClass('btnTwo');
+        errorSound.play();
     }
 }
 
@@ -137,8 +143,13 @@ function btnTwoReset() {
     $("#btnTwo").css('opacity','1');
     $("#btnTwo").css('cursor','pointer');
     $("#btnTwo").on("click",function () {
+        sound.play();
         btnTwoCheckPoint();
         btnTwoFuntions();
+    });
+    $('#btnTwo').hover(function() {
+        $("#btnTwo:hover").css('transform', 'scale(1.2, 1.2)');
+        $("#btnTwo:hover").css('box-shadow', '1px 0 20px 6px #00A8FF');
     });
 }
 
@@ -146,8 +157,13 @@ function btnOneReset() {
     $("#btnOne").css('opacity','1');
     $("#btnOne").css('cursor','pointer');
     $("#btnOne").on("click",function () {
+        sound.play();
         btnOneCheckPoint();
         btnOneFuntions();
+    });
+    $('#btnOne').hover(function() {
+        $("#btnOne:hover").css('transform', 'scale(1.2, 1.2)');
+        $("#btnOne:hover").css('box-shadow', '1px 0 20px 6px #00A8FF');
     });
 }
 
