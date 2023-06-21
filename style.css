@@ -17,6 +17,9 @@ main{
     position: relative;
     width: 100%;
     height: calc(((100vh * 9) + 10vh) - 20vh);
+    /*fixed eke set eka not sute*/
+    /*margin-top:82px ;!*n*!*/
+    /*z-index: 2;!*n*!*/
 }
 
 main>section{
@@ -54,6 +57,13 @@ main>section{
         position: relative;
         font-size: 20px;
         font-family: 'Cinzel', serif;
+        /*fixed eke set eka not sute*/
+        /*position: fixed;!*n*!*/
+        /*top:0;!*n*!*/
+        /*z-index: 3;!*n*!*/
+        /*width:100%;!*n*!*/
+        /*background: url("assets/image/MY Mock-Up Images/new/Correct-Graint.png");!*n*!*/
+        /*opacity: 0.99;!*n*!*/
     }
 
     header > h2 {
@@ -1026,11 +1036,11 @@ main>section{
         z-index: 9;
         cursor: not-allowed;
     }
-
-    main > section:nth-child(3) > section > div:nth-child(10):hover {/*new Transaction*/
-        border:1px solid red;
-        box-shadow: 1px 0 20px 6px red;
-    }
+     /* I think it's not match*/
+    /*main > section:nth-child(3) > section > div:nth-child(10):hover {!*new Transaction*!*/
+    /*    border:1px solid red;*/
+    /*    box-shadow: 1px 0 20px 6px red;*/
+    /*}*/
 
     main > section:nth-child(3) > section > div:nth-child(11) {
         position: absolute;
@@ -1951,6 +1961,10 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         border-radius: 56px;
     }
 
+    main > section:nth-child(6) > section > section > div:hover {/*new Transaction*/
+        box-shadow: 1px 0 20px 6px white;
+    }
+
     main > section:nth-child(6) > section > section > div > a > p {
         margin-bottom: 0;
         margin-top: 0;
@@ -2243,6 +2257,10 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         cursor:pointer;
     }
 
+    main > section:nth-child(7) > section > div:nth-child(1):hover {/*new Transaction*/
+        box-shadow: 1px 0 20px 6px white;
+    }
+
     main > section:nth-child(7) > section > div:nth-child(2) {
         top: 102px;
         left: 185px;
@@ -2253,8 +2271,11 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         background-position: center;
         z-index: 2;
         cursor:pointer;
-
     }
+    main > section:nth-child(7) > section > div:nth-child(2):hover {/*new Transaction*/
+        box-shadow: 1px 0 20px 6px white;
+    }
+
 
     main > section:nth-child(7) > section > div:nth-child(3) {
         top: 0;
@@ -2283,6 +2304,10 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         cursor:pointer;
     }
 
+    main > section:nth-child(7) > section > div:nth-child(4):hover {/*new Transaction*/
+        box-shadow: 1px 0 20px 6px white;
+    }
+
     main > section:nth-child(7) > section > div:nth-child(5) {
         top: 148px;
         left: 948px;
@@ -2293,6 +2318,10 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         background-position: center;
         z-index: 1;
         cursor:pointer;
+    }
+
+    main > section:nth-child(7) > section > div:nth-child(5):hover {/*new Transaction*/
+        box-shadow: 1px 0 20px 6px white;
     }
 
 

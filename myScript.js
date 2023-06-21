@@ -188,124 +188,121 @@ function btnTwoCheckPoint() {
     });
 
 
-function logoRotation() {
-    var logoUrl = $("#logoOne").css('background-image');
-    var logowidth = $('#logoOne').css('width');
-    var logoheight = $('#logoOne').css('height');
+    /*hold for something*/
+// function logoRotation() {
+//     var logoUrl = $("#logoOne").css('background-image');
+//     var logowidth = $('#logoOne').css('width');
+//     var logoheight = $('#logoOne').css('height');
+//
+//     var logoUrl2 = $("#logoTwo").css('background-image');
+//     var logowidth2 = $('#logoTwo').css('width');
+//     var logoheight2 = $('#logoTwo').css('height');
+//
+//     var logoUrl3 = $("#logoThree").css('background-image');
+//     var logowidth3 = $('#logoThree').css('width');
+//     var logoheight3 = $('#logoThree').css('height');
+//
+//     var logoUrl4 = $("#logoFour").css('background-image');
+//     var logowidth4 = $('#logoFour').css('width');
+//     var logoheight4 = $('#logoFour').css('height');
+//
+//     var logoUrl5 = $("#logoFive").css('background-image');
+//     var logowidth5 = $('#logoFive').css('width');
+//     var logoheight5 = $('#logoFive').css('height');
+//
+//     var logoUrl6 = $("#logoSix").css('background-image');
+//     var logowidth6 = $('#logoSix').css('width');
+//     var logoheight6 = $('#logoSix').css('height');
+//
+//     var logoUrl7 = $("#logoSeven").css('background-image');
+//     var logowidth7 = $('#logoSeven').css('width');
+//     var logoheight7 = $('#logoSeven').css('height');
+//
+//     var logoUrl8 = $("#logoEight").css('background-image');
+//     var logowidth8 = $('#logoEight').css('width');
+//     var logoheight8 = $('#logoEight').css('height');
+//
+//     var logoUrl9 = $("#logoNine").css('background-image');
+//     var logowidth9 = $('#logoNine').css('width');
+//     var logoheight9 = $('#logoNine').css('height');
+//
+//
+//     $('#logoTwo').css({
+//         'background-image': logoUrl4,
+//         'width': logowidth4,
+//         'height': logoheight4,
+//     });
+//
+//     $("#logoThree").css({
+//         'background-image': logoUrl3,
+//         'width': logowidth3,
+//         'height': logoheight3,
+//     });
+//
+//     $("#logoFour").css({
+//         'background-image': logoUrl2,
+//         'width': logowidth2,
+//         'height': logoheight2,
+//     });
+//
+//     $("#logoFive").css({
+//         'background-image': logoUrl6,
+//         'width': logowidth6,
+//         'height': logoheight6,
+//     });
+//
+//     $("#logoNine").css({
+//         'background-image': logoUrl,
+//         'width': logowidth,
+//         'height': logoheight,
+//     });
+//
+//     $("#logoEight").css({
+//         'background-image': logoUrl7,
+//         'width': logowidth7,
+//         'height': logoheight7,
+//     });
+//
+//     $("#logoSeven").css({
+//         'background-image': logoUrl8,
+//         'width': logowidth8,
+//         'height': logoheight8,
+//     });
+//
+//     $("#logoSix").css({
+//         'background-image': logoUrl5,
+//         'width': logowidth5,
+//         'height': logoheight5,
+//     });
+//
+//     $("#logoOne").css({
+//         'background-image': logoUrl9,
+//         'width': logowidth9,
+//         'height': logoheight9,
+//     });
+// }
+// function checkWindowWidth() {
+//
+//     let windowWidth = $(window).width();
+//
+//     if (windowWidth>= 1370 && windowWidth <= 1440) {
+//         logoRotation();
+//     } else if (windowWidth >= 769 && windowWidth <= 1024) {
+//         logoRotation();
+//     } else if (windowWidth >= 426 && windowWidth <= 768) {
+//         logoRotation();
+//     } else if (windowWidth >= 425 && windowWidth <= 376) {
+//         logoRotation();
+//     } else if (windowWidth >= 375 && windowWidth <= 321) {
+//         logoRotation();
+//     } else if (windowWidth >= 318 && windowWidth <= 320) {
+//         logoRotation();
+//     } else {
+//         logoRotation();
+//     }
+// }
+// setInterval(checkWindowWidth,3000);
 
-    var logoUrl2 = $("#logoTwo").css('background-image');
-    var logowidth2 = $('#logoTwo').css('width');
-    var logoheight2 = $('#logoTwo').css('height');
-
-    var logoUrl3 = $("#logoThree").css('background-image');
-    var logowidth3 = $('#logoThree').css('width');
-    var logoheight3 = $('#logoThree').css('height');
-
-    var logoUrl4 = $("#logoFour").css('background-image');
-    var logowidth4 = $('#logoFour').css('width');
-    var logoheight4 = $('#logoFour').css('height');
-
-    var logoUrl5 = $("#logoFive").css('background-image');
-    var logowidth5 = $('#logoFive').css('width');
-    var logoheight5 = $('#logoFive').css('height');
-
-    var logoUrl6 = $("#logoSix").css('background-image');
-    var logowidth6 = $('#logoSix').css('width');
-    var logoheight6 = $('#logoSix').css('height');
-
-    var logoUrl7 = $("#logoSeven").css('background-image');
-    var logowidth7 = $('#logoSeven').css('width');
-    var logoheight7 = $('#logoSeven').css('height');
-
-    var logoUrl8 = $("#logoEight").css('background-image');
-    var logowidth8 = $('#logoEight').css('width');
-    var logoheight8 = $('#logoEight').css('height');
-
-    var logoUrl9 = $("#logoNine").css('background-image');
-    var logowidth9 = $('#logoNine').css('width');
-    var logoheight9 = $('#logoNine').css('height');
-
-
-    $('#logoTwo').css({
-        'background-image': logoUrl4,
-        'width': logowidth4,
-        'height': logoheight4,
-    });
-
-    $("#logoThree").css({
-        'background-image': logoUrl3,
-        'width': logowidth3,
-        'height': logoheight3,
-    });
-
-    $("#logoFour").css({
-        'background-image': logoUrl2,
-        'width': logowidth2,
-        'height': logoheight2,
-    });
-
-    $("#logoFive").css({
-        'background-image': logoUrl6,
-        'width': logowidth6,
-        'height': logoheight6,
-    });
-
-    $("#logoNine").css({
-        'background-image': logoUrl,
-        'width': logowidth,
-        'height': logoheight,
-    });
-
-    $("#logoEight").css({
-        'background-image': logoUrl7,
-        'width': logowidth7,
-        'height': logoheight7,
-    });
-
-    $("#logoSeven").css({
-        'background-image': logoUrl8,
-        'width': logowidth8,
-        'height': logoheight8,
-    });
-
-    $("#logoSix").css({
-        'background-image': logoUrl5,
-        'width': logowidth5,
-        'height': logoheight5,
-    });
-
-    $("#logoOne").css({
-        'background-image': logoUrl9,
-        'width': logowidth9,
-        'height': logoheight9,
-    });
-}
-
-function checkWindowWidth() {
-
-    let windowWidth = $(window).width();
-
-    if (windowWidth>= 1370 && windowWidth <= 1440) {
-        logoRotation();
-    } else if (windowWidth >= 769 && windowWidth <= 1024) {
-        logoRotation();
-    } else if (windowWidth >= 426 && windowWidth <= 768) {
-        logoRotation();
-    } else if (windowWidth >= 425 && windowWidth <= 376) {
-        logoRotation();
-    } else if (windowWidth >= 375 && windowWidth <= 321) {
-        logoRotation();
-    } else if (windowWidth >= 318 && windowWidth <= 320) {
-        logoRotation();
-    } else {
-        logoRotation();
-    }
-}
-
-setInterval(checkWindowWidth,3000);
-
-// setInterval(function () {
-// }, 3000);
 
 //section 7
 
@@ -445,4 +442,6 @@ $("#imbtnTwo").click(function () {
         sound.play();
     }
 });
+
+
 
