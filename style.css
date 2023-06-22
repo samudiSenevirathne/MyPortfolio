@@ -1985,7 +1985,15 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         color: white;
         transform: rotate(-90deg);
         text-decoration: none;
+        animation: 2s linear 0s infinite running textAni;
     }
+
+    @keyframes textAni {
+       50%{
+            transform: scale(1.2,1.2) rotate(-90deg);
+        }
+    }
+
 
     main > section:nth-child(6) > section > section:nth-child(1) > div:nth-child(1) {
         background: url("assets/image/MY Mock-Up Images/assignmentShots/Assignment-01.JPG");

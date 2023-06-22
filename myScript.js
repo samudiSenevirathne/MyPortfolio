@@ -1,8 +1,8 @@
 //section 3
 const sound = document.getElementById('sound');
 const errorSound = document.getElementById('errorSound');
-const assOneSound = document.getElementById('assOneSound');
-const assTwoSound = document.getElementById('assTwoSound');
+
+
 
 $("#certificateOne").click(function () {
       sound.play();
@@ -460,9 +460,74 @@ $("#imbtnTwo").click(function () {
 //section 6
 
     $("#assTextOne").hover(function () {
-        assOneSound.play();
+        $('#assOneSound').get(0).play();
     });
 
     $("#assTextTwo").hover(function () {
-         assTwoSound.play();
+        $('#assTwoSound').get(0).play();
     });
+
+    $("#assTextThree").hover(function () {
+        $('#assThreeSound').get(0).play();
+    });
+
+    $("#assTextFour").hover(function () {
+        $('#assFourSound').get(0).play();
+    });
+
+    $("#assTextFive").hover(function () {
+        $('#assFiveSound').get(0).play();
+    });
+
+    $("#assTextSix").hover(function () {
+        $('#assSixSound').get(0).play();
+    });
+
+    $("#assTextSeven").hover(function () {
+        $('#assSevenSound').get(0).play();
+    });
+
+    $("#assTextEight").hover(function () {
+        $('#assEightSound').get(0).play();
+    });
+
+    $("#assTextNine").hover(function () {
+        $('#assNineSound').get(0).play();
+    });
+
+    $("#assTextTen").hover(function () {
+        $('#assTenSound').get(0).play();
+    });
+
+    $("#assTextEleven").hover(function () {
+        $('#assElevenSound').get(0).play();
+    });
+
+    $("#assTextTwelve").hover(function () {
+        $('#assTwelveSound').get(0).play();
+    });
+
+    $("#assTextThirteen").hover(function () {
+        $('#assThirteenSound').get(0).play();
+    });
+
+    $("#assTextFourteen").hover(function () {
+        $('#assFourteenSound').get(0).play();
+    });
+
+    $("#assTextFifteen").hover(function () {
+        $('#assFifteenSound').get(0).play();
+    });
+
+    $("#assTextSixteen").hover(function () {
+        $('#assSixteenSound').get(0).play();
+    });
+
+    $("#assTextSeventeen").hover(function () {
+        $('#assSeventeenSound').get(0).play();
+    });
+
+    $("#assTextEighteen").hover(function () {
+        $('#assEighteenSound').get(0).play();
+    });
+
