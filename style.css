@@ -1267,7 +1267,7 @@ main>section{
         width: 8%;
         height: 52%;
         left: 1113px;
-        top: 253px;
+        top: 256px;
         /*background: purple;*/
     }
 
@@ -1276,7 +1276,7 @@ main>section{
         width: 44%;
         height: 16%;
         left: 583px;
-        top: 438px;
+        top: 443px;
         /*background: white;*/
     }
 
@@ -1285,7 +1285,7 @@ main>section{
         width: 42%;
         height: 16%;
         left: 77px;
-        top: 438px;
+        top: 443px;
         /*background: #5dcb2f;*/
     }
 
@@ -1294,7 +1294,7 @@ main>section{
         width: 8%;
         height: 52%;
         left: -5px;
-        top: 253px;
+        top: 256px;
         /*background: gray;*/
     }
 
@@ -12857,17 +12857,56 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         left: 944px;
     }
 
-
-    main > section:nth-child(4) > section > section:nth-child(1) {
-        left: 15px;
+    main > section:nth-child(4) > section > div:nth-child(1) {
+        left: 82px;
+        top: -5px;
     }
 
-    main > section:nth-child(4) > section > section:nth-child(2) {
-        left: 415px;
+    main > section:nth-child(4) > section > div:nth-child(2) {
+        left: 626px;
+        top: -5px;
     }
 
-    main > section:nth-child(4) > section > section:nth-child(3) {
-        left: 817px;
+    main > section:nth-child(4) > section > div:nth-child(3) {
+        left: 1171px;
+        top: -5px;
+    }
+
+    main > section:nth-child(4) > section > div:nth-child(4) {
+        left: 1172px;
+        top: 253px;
+    }
+
+    main > section:nth-child(4) > section > div:nth-child(5) {
+        left: 614px;
+        top: 438px;
+    }
+
+    main > section:nth-child(4) > section > div:nth-child(6) {
+        left: 81px;
+        top: 439px;
+    }
+
+    main > section:nth-child(4) > section > div:nth-child(7) {
+        left: -5px;
+        top: 253px;
+    }
+
+    main > section:nth-child(4) > section > div:nth-child(8) {
+        left: -5px;
+        top: -5px;
+    }
+
+    main > section:nth-child(4) > section > section > h1:nth-child(9) {
+        left: 1171px;
+    }
+
+    main > section:nth-child(4) > section > section > h1:nth-child(10) {
+        left: 758px;
+    }
+
+    main > section:nth-child(4) > section > section > section:nth-child(11) {
+        left: 748px;
     }
 
     main > section:nth-child(5) > aside > h1:nth-child(2) > dfn > b {
