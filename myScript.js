@@ -545,6 +545,7 @@ setInterval(function (){
 },500);
 
 $("#btn2").click(function () {
+    sound.play();
    $("#img1").css('background-image','url("assets/image/MY Mock-Up Images/project/battle field game logo 3.JPG")');
    $("#img2").css('background-image','url("assets/image/MY Mock-Up Images/project/battle field game logo 2.JPG")');
    $("#img3").css('background-image','url("assets/image/MY Mock-Up Images/project/battle field game logo 1.JPG")');
@@ -555,6 +556,7 @@ $("#btn2").click(function () {
 });
 
  $("#btn3").click(function () {
+     sound.play();
    $("#img1").css('background-image','url("assets/image/MY Mock-Up Images/project/hotel system logo 3.JPG")');
    $("#img2").css('background-image','url("assets/image/MY Mock-Up Images/project/hotel system logo 2.JPG")');
    $("#img3").css('background-image','url("assets/image/MY Mock-Up Images/project/hotel system logo 1.JPG")');
@@ -565,6 +567,7 @@ $("#btn2").click(function () {
 });
 
  $("#btn1").click(function () {
+     sound.play();
    $("#img1").css('background-image','url("assets/image/MY Mock-Up Images/project/airline project logo 3.JPG")');
    $("#img2").css('background-image','url("assets/image/MY Mock-Up Images/project/airline project logo 2.JPG")');
    $("#img3").css('background-image','url("assets/image/MY Mock-Up Images/project/airline project logo.JPG")');
@@ -574,3 +577,16 @@ $("#btn2").click(function () {
    $("#imgjava").css('visibility','visible');
    $("#imgjava").attr('src','assets/image/MY%20Mock-Up%20Images/java-logo%201%20(traced).png');
 });
+
+$("#btn4").click(function () {
+    sound.play();
+    $("#img1").css('background-image','url("assets/image/MY Mock-Up Images/project/D24 Hostel Management system logo 3.JPG")');
+    $("#img2").css('background-image','url("assets/image/MY Mock-Up Images/project/D24 Hostel Management system logo 2.JPG")');
+    $("#img3").css('background-image','url("assets/image/MY Mock-Up Images/project/D24 Hostel Management system logo 1.JPG")');
+    $("#pageNo").text('04');
+    $("#title").text('D24 Hostel Management System');
+    $("#imgsql").attr('src','assets/image/MY%20Mock-Up%20Images/Hibernate_logo_a-1024x284.png');
+    $("#imgjava").css('visibility','visible');
+    $("#imgjava").attr('src','assets/image/MY%20Mock-Up%20Images/java-logo%201%20(traced).png');
+});
+
