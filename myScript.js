@@ -531,3 +531,15 @@ $("#imbtnTwo").click(function () {
         $('#assEighteenSound').get(0).play();
     });
 
+    //section 4
+
+let colors=["#15C1EC","#24144C","#15C1EC","#24144C","#15C1EC","#24144C","#15C1EC","#24144C"];
+
+setInterval(function (){
+    let divArray=document.querySelector("#secOne").children;
+            for (let i = 0; i < colors.length; i++) {
+                console.log(colors[i]);
+                divArray[i].style.background = colors[i];
+            }
+            colors.unshift(colors.pop());
+},500);

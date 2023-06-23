@@ -85,7 +85,7 @@
     <h1>Java Script Queue</h1>
     <div></div>
     <div></div>
-<section>
+<section id="secOne">
   <div class="id"></div>
   <div class="id"></div>
   <div class="id"></div>
@@ -98,13 +98,13 @@
 
     let colors=["red","green","blue","yellow","pink","mediumPurple"];
 
-    setInterval(function (){
-    let divArray=document.querySelector("section").children;
-    for (let i = 0; i < colors.length; i++) {
-        console.log(colors[i]);
-        divArray[i].style.background = colors[i];
-    }
-        colors.unshift(colors.pop());
+    setInterval(function () {
+         let divArray=document.querySelector("section").children;
+                for (let i = 0; i < colors.length; i++) {
+                    console.log(colors[i]);
+                    divArray[i].style.background = colors[i];
+                }
+                colors.unshift(colors.pop());
             },500);
 
 

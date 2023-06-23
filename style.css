@@ -1235,227 +1235,260 @@ main>section{
         top: 19px;
     }
 
-
-    main > section:nth-child(4) > section > section:nth-child(1) {
+    main > section:nth-child(4) > section > div:nth-child(1) {
         position: absolute;
-        width: 381px;
-        height: 520px;
-        left: 0;
-        top: 0;
+        width: 43%;
+        height: 16%;
+        left: 78px;
+        top: -5px;
+        /*background: red;*/
     }
 
-    main > section:nth-child(4) > section > section:nth-child(2) {
+    main > section:nth-child(4) > section > div:nth-child(2) {
         position: absolute;
-        width: 382px;
-        height: 520px;
-        left: 381px;
-        top: 0;
+        width: 43%;
+        height: 16%;
+        left: 596px;
+        top: -5px;
+        /*background: pink;*/
     }
 
-    main > section:nth-child(4) > section > section:nth-child(3) {
+    main > section:nth-child(4) > section > div:nth-child(3) {
         position: absolute;
-        width: 437px;
-        height: 520px;
-        left: 763px;
-        top: 0;
+        width: 8%;
+        height: 50%;
+        left: 1113px;
+        top: -5px;
+        /*background: yellow;*/
     }
 
-
-    main > section:nth-child(4) > section > section:nth-child(1) > img:nth-child(1) {
-        position: relative;
-        left: 10px;
-        top: 10px;
-        width: 300px;
-        height: 250px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(1) > img:nth-child(2) {
-        position: relative;
-        left: 55px;
-        top: -192px;
-        width: 300px;
-        height: 250px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(1) > img:nth-child(3) {
-        position: relative;
-        left: 1px;
-        top: -191px;
-        width: 247px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(1) > img:nth-child(4) {
-        position: relative;
-        left: 171px;
-        top: -171px;
-        width: 174px;
-        height: 69px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(1) > div:nth-child(5) {
+    main > section:nth-child(4) > section > div:nth-child(4) {
         position: absolute;
-        left: 199px;
-        top: 396px;
-        width: 0;
-        height: 30px;
-        border: 2px solid #15C1EC;
-        transform: rotate(90deg);
-        border-right-width: 0;
-        border-top-width: 0;
+        width: 8%;
+        height: 52%;
+        left: 1113px;
+        top: 253px;
+        /*background: purple;*/
     }
 
-    main > section:nth-child(4) > section > section:nth-child(1) > div:nth-child(6) {
+    main > section:nth-child(4) > section > div:nth-child(5) {
         position: absolute;
-        left: 199px;
-        top: 396px;
-        width: 0;
-        height: 30px;
-        border: 2px solid #15C1EC;
-        border-right-width: 0;
-        border-top-width: 0;
+        width: 44%;
+        height: 16%;
+        left: 583px;
+        top: 438px;
+        /*background: white;*/
     }
 
-
-    main > section:nth-child(4) > section > section:nth-child(1) > div:nth-child(7) {
+    main > section:nth-child(4) > section > div:nth-child(6) {
         position: absolute;
+        width: 42%;
+        height: 16%;
+        left: 77px;
+        top: 438px;
+        /*background: #5dcb2f;*/
+    }
+
+    main > section:nth-child(4) > section > div:nth-child(7) {
+        position: absolute;
+        width: 8%;
+        height: 52%;
+        left: -5px;
+        top: 253px;
+        /*background: gray;*/
+    }
+
+    main > section:nth-child(4) > section > div:nth-child(8) {
+        position: absolute;
+        width: 8%;
+        height: 50%;
+        left: -5px;
+        top: -5px;
+        /*background: orangered;*/
+    }
+
+    main > section:nth-child(4) > section > section{
+        position: absolute;
+        width: 99%;
+        height: 98%;
         left: 6px;
-        top: 323px;
-        width: 21px;
-        height: 23px;
-        background: url("assets/image/MY Mock-Up Images/sideButton.png");
-        background-size:cover;
-        background-position: center;
+        top: 4px;
+        background: #24144C;
     }
 
-
-    main > section:nth-child(4) > section > section:nth-child(2) > img:nth-child(1) {
-        position: relative;
-        left: 11px;
-        top: 10px;
-        width: 300px;
-        height: 250px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(2) > img:nth-child(2) {
-        position: relative;
-        left: 42px;
-        top: -194px;
-        width: 300px;
-        height: 250px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(2) > img:nth-child(3) {
-        position: relative;
-        left: -12px;
-        top: -193px;
-        width: 247px;
-        height: 96px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(2) > img:nth-child(4) {
-        position: relative;
-        left: 200px;
-        top: -188px;
-        width: 174px;
-        height: 69px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(2) > div:nth-child(5) {
+    main > section:nth-child(4) > section > section > div:nth-child(1){
         position: absolute;
-        left: 197px;
-        top: 406px;
-        width: 0;
-        height: 30px;
-        border: 2px solid #15C1EC;
-        transform: rotate(90deg);
-        border-right-width: 0;
-        border-top-width: 0;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(2) > div:nth-child(6) {
-        position: absolute;
-        left: 197px;
-        top: 406px;
-        width: 0;
-        height: 30px;
-        border: 2px solid #15C1EC;
-        border-right-width: 0;
-        border-top-width: 0;
-    }
-
-
-    main > section:nth-child(4) > section > section:nth-child(3) > img:nth-child(1) {
-        position: relative;
-        left: -1px;
-        top: 10px;
-        width: 400px;
-        height: 213px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(3) > img:nth-child(2) {
-        position: relative;
-        left: 29px;
-        top: -120px;
-        width: 400px;
-        height: 213px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(3) > img:nth-child(3) {
-        position: relative;
-        left: 0;
-        top: -123px;
-        width: 247px;
-        height: 96px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(3) > img:nth-child(4) {
-        position: relative;
-        left: 16px;
-        top: -133px;
-        width: 174px;
-        height: 69px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(3) > img:nth-child(5) {
-        position: relative;
-        left: 154px;
-        top: -100px;
-        width: 174px;
-        height: 69px;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(3) > div:nth-child(6) {
-        position: absolute;
-        left: 230px;
-        top: 405px;
-        width: 0;
-        height: 30px;
-        border: 2px solid #15C1EC;
-        transform: rotate(90deg);
-        border-right-width: 0;
-        border-top-width: 0;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(3) > div:nth-child(7) {
-        position: absolute;
-        left: 230px;
-        top: 405px;
-        width: 0;
-        height: 30px;
-        border: 2px solid #15C1EC;
-        border-right-width: 0;
-        border-top-width: 0;
-    }
-
-    main > section:nth-child(4) > section > section:nth-child(3) > div:nth-child(8) {
-        position: absolute;
-        left: 409px;
-        top: 323px;
-        width: 19px;
-        height: 23px;
-        background: url("assets/image/MY Mock-Up Images/sideButton2.png");
+        width: 39%;
+        height: 60%;
+        left: 9px;
+        top: 13px;
+        /*background: white;*/
+        border-radius: 56px;
+        background: url("assets/image/MY Mock-Up Images/project/airline project logo 3.JPG");
         background-size: cover;
-        background-position: center;
+        background-position: center
+    }
+
+    main > section:nth-child(4) > section > section > div:nth-child(2){
+        position: absolute;
+        width: 39%;
+        height: 60%;
+        left: 101px;
+        top: 65px;
+        /*background: blueviolet;*/
+        border-radius: 56px;
+        background: url("assets/image/MY Mock-Up Images/project/airline project logo 2.JPG");
+        background-size: cover;
+        background-position: center
+    }
+
+    main > section:nth-child(4) > section > section > div:nth-child(3){
+        position: absolute;
+        width: 39%;
+        height: 60%;
+        left: 214px;
+        top: 154px;
+        /*background: deeppink;*/
+        border-radius: 56px;
+        background: url("assets/image/MY Mock-Up Images/project/airline project logo.JPG");
+        background-size: cover;
+        background-position: center
+    }
+
+   main > section:nth-child(4) > section > section > img:nth-child(4){
+       position: absolute;
+       width: 27%;
+       height: 22%;
+       left: 709px;
+       top: 125px;
+  }
+
+   main > section:nth-child(4) > section > section > img:nth-child(5){
+       position: absolute;
+       width: 20%;
+       height: 17%;
+       left: 917px;
+       top: 232px;
+    }
+
+    main > section:nth-child(4) > section > section > img:nth-child(6){
+        position: absolute;
+        width: 20%;
+        height: 17%;
+        left: 783px;
+        top: 339px;
+    }
+
+    main > section:nth-child(4) > section > section > div:nth-child(7){
+        position: absolute;
+        left: 878px;
+        top: 281px;
+        width: 0;
+        height: 30px;
+        border: 2px solid #15C1EC;
+        transform: rotate(90deg);
+        border-right-width: 0;
+        border-top-width: 0;
+   }
+
+    main > section:nth-child(4) > section > section > div:nth-child(8) {
+        position: absolute;
+        left: 878px;
+        top: 281px;
+        width: 0;
+        height: 30px;
+        border: 2px solid #15C1EC;
+        border-right-width: 0;
+        border-top-width: 0;
+    }
+
+    main > section:nth-child(4) > section > section > h1:nth-child(9) {
+        position: absolute;
+        left: 1114px;
+        top: 32px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 53px;
+        line-height: 29px;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    main > section:nth-child(4) > section > section > h1:nth-child(10) {
+        position: absolute;
+        left: 711px;
+        top: 87px;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 29px;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    main > section:nth-child(4) > section > section > section:nth-child(11) {
+        position: absolute;
+        width: 37%;
+        height: 13%;
+        left: 724px;
+        top: 425px;
+        background: #24144C;
+        border:1px solid #00A8FF;
+        overflow:scroll;
+        border-radius:56px;
+    }
+
+    main > section:nth-child(4) > section > section > section:nth-child(11) > div{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #24144C  ;
+        width: calc(100% * 1.25);
+        height: 100%;
+        display: flex;
+        color:#00A8FF;
+        border-radius:56px;
+        /*opacity:0.2;*/
+    }
+
+    main > section:nth-child(4) > section > section > section:nth-child(11) > div>h1{
+        position: absolute;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 29px;
+        margin-top: 0;
+        margin-bottom: 0;
+        cursor:pointer;
+        animation: 2s linear 0s infinite running h1Ani;
+    }
+
+    @keyframes h1Ani {
+        50%{
+            transform: scale(1.2,1.2);
+        }
+    }
+
+    main > section:nth-child(4) > section > section > section:nth-child(11) > div>h1:nth-child(1){
+        left: 46px;
+        top: 18px;
+    }
+
+    main > section:nth-child(4) > section > section > section:nth-child(11) > div>h1:nth-child(2){
+        left: 194px;
+        top: 18px;
+    }
+
+     main > section:nth-child(4) > section > section > section:nth-child(11) > div>h1:nth-child(3){
+         left: 342px;
+         top: 18px;
+    }
+
+    main > section:nth-child(4) > section > section > section:nth-child(11) > div>h1:nth-child(4){
+        left: 471px;
+        top: 18px;
     }
 
 
@@ -5939,6 +5972,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         top: 0;
     }
 
+
     main > section:nth-child(4) > section > section:nth-child(2) {
         width: 32%;
         height: 100%;
@@ -5950,7 +5984,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
         width: 36%;
         height: 100%;
         left: 243px;
-        top: 0px;
+        top: 0;
     }
 
     main > section:nth-child(4) > section > section:nth-child(1) > img:nth-child(1) {
