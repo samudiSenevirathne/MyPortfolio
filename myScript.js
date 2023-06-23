@@ -543,3 +543,34 @@ setInterval(function (){
             }
             colors.unshift(colors.pop());
 },500);
+
+$("#btn2").click(function () {
+   $("#img1").css('background-image','url("assets/image/MY Mock-Up Images/project/battle field game logo 3.JPG")');
+   $("#img2").css('background-image','url("assets/image/MY Mock-Up Images/project/battle field game logo 2.JPG")');
+   $("#img3").css('background-image','url("assets/image/MY Mock-Up Images/project/battle field game logo 1.JPG")');
+   $("#pageNo").text('02');
+   $("#title").text('Battle Field Small Game');
+    $("#imgsql").attr('src','assets/image/MY%20Mock-Up%20Images/java-logo%201%20(traced).png');
+    $("#imgjava").css('visibility','hidden');
+});
+
+ $("#btn3").click(function () {
+   $("#img1").css('background-image','url("assets/image/MY Mock-Up Images/project/hotel system logo 3.JPG")');
+   $("#img2").css('background-image','url("assets/image/MY Mock-Up Images/project/hotel system logo 2.JPG")');
+   $("#img3").css('background-image','url("assets/image/MY Mock-Up Images/project/hotel system logo 1.JPG")');
+   $("#pageNo").text('03');
+   $("#title").text('Hotel Management System');
+    $("#imgsql").attr('src','assets/image/MY%20Mock-Up%20Images/java-logo%201%20(traced).png');
+    $("#imgjava").css('visibility','hidden');
+});
+
+ $("#btn1").click(function () {
+   $("#img1").css('background-image','url("assets/image/MY Mock-Up Images/project/airline project logo 3.JPG")');
+   $("#img2").css('background-image','url("assets/image/MY Mock-Up Images/project/airline project logo 2.JPG")');
+   $("#img3").css('background-image','url("assets/image/MY Mock-Up Images/project/airline project logo.JPG")');
+   $("#pageNo").text('01');
+   $("#title").text('Airline Ticket Reservation System');
+   $("#imgsql").attr('src','assets/image/MY%20Mock-Up%20Images/mysql-logo%201%20(traced).png');
+   $("#imgjava").css('visibility','visible');
+   $("#imgjava").attr('src','assets/image/MY%20Mock-Up%20Images/java-logo%201%20(traced).png');
+});
