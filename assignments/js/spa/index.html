@@ -113,28 +113,29 @@
 
     </style>
 
+
 </head>
 <body>
 
-<header class="position-relative top-0 justify-content-sm-center">
+<header class="position-relative top-0 justify-content-sm-center" id="header">
     <nav class="navbar"  style="background:#9980FA">
         <!-- Navbar-->
         <div class="container  justify-content-sm-center">
             <a class="navbar-brand m-sm-5 text-sm-center text-wrap position-relative start-0 text-xl-end" href="#" style="left:-150px!important;">POS</a>
             <ul class="nav justify-content-end justify-content-sm-center me-5">
-                <li class="nav-item">
+                <li class="nav-item" id="home">
                     <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item" id="customer">
                     <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-user"></i>Customers</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item" id="item">
                     <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-box"></i>Items</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item" id="order">
                     <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-cart-shopping"></i>Orders</a>
                 </li>
             </ul>
@@ -144,29 +145,31 @@
 <!--Home-->
 <main class="container  justify-content-center " >
     <!--Home-->
-    <section class="row mt-sm-5  mt-md-5 justify-content-center" style="margin-top: -5rem !important;" >
-        <a href="#" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
-            <div class="col-12 position-relative" style="background-color:#F0A762; border-radius: 100%">
-                <div class="position-absolute bottom-0 start-0 end-0 top-0 " style="margin: auto"></div>
-                <h4 class=" col-6 position-absolute top-100" style="left: 52px">CUSTOMERS</h4>
-            </div>
-        </a>
-        <a href="#" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
-            <div class=" col-12 position-relative"
-                 style="background-color: #3D8B90;border-radius: 100%">
-                <div class="position-absolute bottom-0 start-0 end-0 top-0 " style="margin: auto"></div>
-                <h4 class=" col-6 position-absolute top-100" style="left: 81px">ORDER</h4>
-            </div>
-        </a>
-        <a href="#" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center  m-3 position-relative">
-            <div class="col-12 position-relative" style="background-color: #E58D8D;border-radius: 100%">
-                <div class="position-absolute bottom-0 start-0 end-0 top-0 " style="margin: auto"></div>
-                <h4 class=" col-6 position-absolute top-100" style="left: 80px">ITEMS</h4>
-            </div>
-        </a>
-    </section>
+    <main class="container  justify-content-center" id="homeContent">
+        <section class="row mt-sm-5  mt-md-5 justify-content-center"  style="margin-top: -5rem !important;"  >
+            <a  href="#" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
+                <div class="col-12 position-relative" style="background-color:#F0A762; border-radius: 100%">
+                    <div class="position-absolute bottom-0 start-0 end-0 top-0 " style="margin: auto"></div>
+                    <h4 class=" col-6 position-absolute top-100" style="left: 52px">CUSTOMERS</h4>
+                </div>
+            </a>
+            <a href="#" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
+                <div class=" col-12 position-relative"
+                     style="background-color: #3D8B90;border-radius: 100%">
+                    <div class="position-absolute bottom-0 start-0 end-0 top-0 " style="margin: auto"></div>
+                    <h4 class=" col-6 position-absolute top-100" style="left: 81px">ORDER</h4>
+                </div>
+            </a>
+            <a href="#" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center  m-3 position-relative">
+                <div class="col-12 position-relative" style="background-color: #E58D8D;border-radius: 100%">
+                    <div class="position-absolute bottom-0 start-0 end-0 top-0 " style="margin: auto"></div>
+                    <h4 class=" col-6 position-absolute top-100" style="left: 80px">ITEMS</h4>
+                </div>
+            </a>
+        </section>
+    </main>
       <!--customer-->
-    <section class="container mt-5">
+    <section class="container mt-5" id="customerContent">
     <button class="btn btn-primary position-relative "  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="background: #6f42c1; color: black; border: 1px solid #6f42c1">
         <i class="fa-solid fa-bars"></i>
     </button>
@@ -325,7 +328,7 @@
     </section>
 </section>
     <!--Item-->
-    <section class="container mt-5">
+    <section class="container mt-5" id="itemContent">
 
         <button class="btn btn-primary position-relative "  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="background: #6f42c1; color: black; border: 1px solid #6f42c1">
             <i class="fa-solid fa-bars"></i>
@@ -488,7 +491,7 @@
         </section>
     </section>
     <!--Order-->
-    <section class="container mt-5">
+    <section class="container mt-5" id="orderContent">
 
         <button class="btn btn-primary position-relative "  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="background: #6f42c1; color: black; border: 1px solid #6f42c1">
             <i class="fa-solid fa-bars"></i>
@@ -657,69 +660,47 @@
     </section>
 
 </main>
+
+<script src="../../../assets/jQuery/jquery-3.7.0.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+
 <script>
 
-    document.getElementById("saveCustomer").addEventListener("click", function () {
-        let id = document.getElementById("customerCode").value;
-        let name = document.getElementById("customerName").value;
-        let nic=document.getElementById("customerNIC").value;
-        let dob=document.getElementById("customerDOB").value;
-        let address = document.getElementById("customerAddress").value;
-        let salary = document.getElementById("customerSalary").value;
-        console.log(id,name,nic,dob,address,salary);
-        let tBody=document.getElementById("tblCustomer");
-        let tr= document.createElement("tr");
-        let col1= document.createElement("td");
-        let col2= document.createElement("td");
-        let col3= document.createElement("td");
-        let col4= document.createElement("td");
-        let col5= document.createElement("td");
-        let col6= document.createElement("td");
-        col1.textContent=id;
-        col2.textContent=name;
-        col3.textContent=nic;
-        col4.textContent=dob;
-        col5.textContent=address;
-        col6.textContent=salary;
-        tr.appendChild(col1);
-        tr.appendChild(col2);
-        tr.appendChild(col3);
-        tr.appendChild(col4);
-        tr.appendChild(col5);
-        tr.appendChild(col6);
-        tBody.appendChild(tr);
+    $("#header").css('display', 'block');
+    $("#homeContent").css('display', 'block');
+    $("#customerContent").css('display', 'none');
+    $("#itemContent").css('display', 'none');
+    $("#orderContent").css('display', 'none');
+    $("#home").click(function () {
+        $("#header").css('display', 'block');
+        $("#homeContent").css('display', 'block');
+        $("#customerContent").css('display', 'none');
+        $("#itemContent").css('display', 'none');
+        $("#orderContent").css('display', 'none');
     });
 
-    document.getElementById("saveItem").addEventListener("click", function () {
-        let id = document.getElementById("itemCode").value;
-        let name = document.getElementById("itemName").value;
-        let describe=document.getElementById("itemDescription").value;
-        let bPrice=document.getElementById("itemPrice").value;
-        let sPrice = document.getElementById("itemSellingPrice").value;
-        let qty = document.getElementById("itemQty").value;
-        console.log(id,name,describe,bPrice,sPrice,qty);
-        let tBody=document.getElementById("tblItem");
-        let tr= document.createElement("tr");
-        let col1= document.createElement("td");
-        let col2= document.createElement("td");
-        let col3= document.createElement("td");
-        let col4= document.createElement("td");
-        let col5= document.createElement("td");
-        let col6= document.createElement("td");
-        col1.textContent=id;
-        col2.textContent=name;
-        col3.textContent=describe;
-        col4.textContent=bPrice;
-        col5.textContent=sPrice;
-        col6.textContent=qty;
-        tr.appendChild(col1);
-        tr.appendChild(col2);
-        tr.appendChild(col3);
-        tr.appendChild(col4);
-        tr.appendChild(col5);
-        tr.appendChild(col6);
-        tBody.appendChild(tr);
+    $("#customer").click(function () {
+        $("#header").css('display', 'none');
+        $("#homeContent").css('display', 'none');
+        $("#customerContent").css('display', 'block');
+        $("#itemContent").css('display', 'none');
+        $("#orderContent").css('display', 'none');
+    });
+
+    $("#item").click(function () {
+        $("#header").css('display', 'none');
+        $("#homeContent").css('display', 'none');
+        $("#customerContent").css('display', 'none');
+        $("#itemContent").css('display', 'block');
+        $("#orderContent").css('display', 'none');
+    });
+
+    $("#order").click(function () {
+        $("#header").css('display', 'none');
+        $("#homeContent").css('display', 'none');
+        $("#customerContent").css('display', 'none');
+        $("#itemContent").css('display', 'none');
+        $("#orderContent").css('display', 'block');
     });
 
 </script>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SPA</title>
+    <title>InMemory-POS</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/normalize.css">
@@ -123,19 +123,19 @@
         <div class="container  justify-content-sm-center">
             <a class="navbar-brand m-sm-5 text-sm-center text-wrap position-relative start-0 text-xl-end" href="#" style="left:-150px!important;">POS</a>
             <ul class="nav justify-content-end justify-content-sm-center me-5">
-                <li class="nav-item">
+                <li class="nav-item" id="home">
                     <a class="nav-link active" id="lnkHome" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i>Home</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item" id="customer">
                     <a class="nav-link active" id="lnkCustomer" aria-current="page" href="#"><i class="fa-solid fa-user"></i>Customers</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item" id="item">
                     <a class="nav-link active" id="lnkItem" aria-current="page" href="#"><i class="fa-solid fa-box"></i>Items</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item" id="order">
                     <a class="nav-link active" id="lnkOrders" aria-current="page" href="#"><i class="fa-solid fa-cart-shopping"></i>Orders</a>
                 </li>
             </ul>
@@ -145,7 +145,7 @@
 <!--Home-->
 <main>
     <!--Home-->
-    <main class="container  justify-content-center" id="dashboardContent">
+    <main class="container  justify-content-center" id="homeContent">
     <section class="row mt-sm-5  mt-md-5 justify-content-center"  style="margin-top: -5rem !important;"  >
         <a  href="#" class="col-xxl-3 col-xl-3 col-lg-8 col-md-7 col-sm-9 align-self-center m-3 position-relative">
             <div class="col-12 position-relative" style="background-color:#F0A762; border-radius: 100%">
@@ -660,363 +660,48 @@
     </section>
 
 </main>
-<script src="assets/js/bootstrap.min.js"></script>
+
 <script src="assets/js/jquery/jquery-3.7.0.min.js"></script>
-
-<script>
-    //logics for SPA
-    initiateUI();
-
-    function initiateUI() {
-        clearAll();
-        $("#dashboardContent").css("display", "block");
-        setTheLastView();
-    }
-
-    function saveLastView(clickedID) {
-        switch (clickedID) {
-            case "dashboardContent":
-                localStorage.setItem("view", "HOME");
-                break;
-            case "customerContent":
-                localStorage.setItem("view", "CUSTOMER");
-                break;
-            case "itemContent":
-                localStorage.setItem("view", "ITEM");
-                break;
-            case "orderContent":
-                localStorage.setItem("view", "ORDER");
-                break;
-        }
-    }
-
-    function setTheLastView() {
-        let view = localStorage.getItem("view");
-        switch (view) {
-            case "HOME":
-                setView($("#dashboardContent"));
-                break;
-            case "ITEM":
-                setView($("#itemContent"));
-                // $("#header").css('display', 'none');
-                break;
-            case "CUSTOMER":
-                setView($("#customerContent"));
-                // $("#header").css('display', 'none');
-                break;
-            case "ORDER":
-                setView($("#orderContent"));
-                // $("#header").css('display', 'none');
-                break;
-            default:
-                setView($("#dashboardContent"));
-        }
-    }
-
-    function clearAll() {
-        $("#dashboardContent,#customerContent,#itemContent,#orderContent").css('display', 'none');
-    }
-
-    function setView(viewOb) {
-        clearAll();
-        viewOb.css("display", "block");
-        saveLastView(viewOb.get(0).id);
-        console.log(viewOb.get(0).id);
-    }
-
-    //bind events
-    $("#lnkHome").click(function () {
-        setView($("#dashboardContent"));
-    });
-
-    $("#lnkCustomer").click(function () {
-        setView($("#customerContent"));
-        $("#header").css('display', 'none');
-    });
-
-    $("#lnkItem").click(function () {
-        setView($("#itemContent"));
-        $("#header").css('display', 'none');
-    });
-
-    $("#lnkOrders").click(function () {
-        setView($("#orderContent"));
-        $("#header").css('display', 'none');
-    });
-
-    //end of logics for SPA
-
-</script>
+<script src="assets/js/bootstrap.min.js"></script>
 
 <script>
 
-    /*mama Native js use karala  karapu eka*/
-
-    // document.getElementById("saveCustomer").addEventListener("click", function () {
-    //     let id = document.getElementById("customerCode").value;
-    //     let name = document.getElementById("customerName").value;
-    //     let nic=document.getElementById("customerNIC").value;
-    //     let dob=document.getElementById("customerDOB").value;
-    //     let address = document.getElementById("customerAddress").value;
-    //     let salary = document.getElementById("customerSalary").value;
-    //     console.log(id,name,nic,dob,address,salary);
-    //     let tBody=document.getElementById("tblCustomer");
-    //     let tr= document.createElement("tr");
-    //     let col1= document.createElement("td");
-    //     let col2= document.createElement("td");
-    //     let col3= document.createElement("td");
-    //     let col4= document.createElement("td");
-    //     let col5= document.createElement("td");
-    //     let col6= document.createElement("td");
-    //     col1.textContent=id;
-    //     col2.textContent=name;
-    //     col3.textContent=nic;
-    //     col4.textContent=dob;
-    //     col5.textContent=address;
-    //     col6.textContent=salary;
-    //     tr.appendChild(col1);
-    //     tr.appendChild(col2);
-    //     tr.appendChild(col3);
-    //     tr.appendChild(col4);
-    //     tr.appendChild(col5);
-    //     tr.appendChild(col6);
-    //     tBody.appendChild(tr);
-    // });
-
-    //JQuery Part 02 (Class-Time)
-
-    // var customerDB = [];
-    //
-    //   $("#saveCustomer").click(function () {
-    //       let id = $("#customerCode").val();
-    //       let name = $("#customerName").val();
-    //       let nic = $("#customerNIC").val();
-    //       let dob = $("#customerDOB").val();
-    //       let address = $("#customerAddress").val();
-    //       let salary = $("#customerSalary").val();
-    //
-    //       let customerArray = [id, name, nic, dob, address, salary];
-    //
-    //       customerDB.push(customerArray);
-    //
-    //   });
-    //
-    //         $("#btn1").click(function () {
-    //     for(let i=0;i<customerDB.length;i++) {
-    //         let code = customerDB[i][0];
-    //         let name = customerDB[i][1];
-    //         let nic = customerDB[i][2];
-    //         let dob = customerDB[i][3];
-    //         let address = customerDB[i][4];
-    //         let salary = customerDB[i][5];
-    //
-    //
-    //         let row = `<tr><td>${code}</td><td>${name}</td><td>${nic}</td><td>${dob}</td><td>${address}</td><td>${salary}</td></tr>`;
-    //
-    //         $("#tblCustomer").append(row);
-    //
-    //     }
-    // });
-
-
-    //step 03 object (Class-Time)
-
-    // var customerDB=[].empty();
-    //
-    //     $("#saveCustomer").click(function () {
-    //         let id = $("#customerCode").val();
-    //         let name = $("#customerName").val();
-    //         let nic = $("#customerNIC").val();
-    //         let dob = $("#customerDOB").val();
-    //         let address = $("#customerAddress").val();
-    //         let salary = $("#customerSalary").val();
-    //
-    //  var customerObject = {
-    //      code:id,
-    //      name:name,
-    //      nic :nic,
-    //      dob : dob,
-    //      address : address,
-    //      salary : salary
-    // }
-    //                   customerDB.push(customerObject);
-    //            });
-    //
-    // $("#btn1").click(function () {
-    //         for(let i=0;i<customerDB.length;i++) {
-    //             let code2 = customerDB[i].code;
-    //             let name2 = customerDB[i].name;
-    //             let nic2 = customerDB[i].nic;
-    //             let dob2 = customerDB[i].dob;
-    //             let address2 = customerDB[i].address;
-    //             let salary2 = customerDB[i].salary;
-    //
-    //             let row = `<tr>
-    //                              <td> ${code2} </td>
-    //                              <td> ${name2} </td>
-    //                              <td> ${nic2} </td>
-    //                             <td>  ${dob2} </td>
-    //                             <td> ${address2} </td>
-    //                             <td> ${salary2} </td>
-    //                      </tr>`;
-    //
-    //             $("#tblCustomer").append(row);
-    //
-    //         }
-    //     });
-
-
-             //JQuery Part 01 (Class-Time)
-
-     $("#saveCustomer").click(function () {
-        let id = $("#customerCode").val();
-        let name =$("#customerName").val();
-        let nic=$("#customerNIC").val();
-        let dob=$("#customerDOB").val();
-        let address = $("#customerAddress").val();
-        let salary = $("#customerSalary").val();
-        console.log(id,name,nic,dob,address,salary);
-
-        let row=  `<tr>
-                     <td> ${id} </td>
-                     <td> ${name} </td>
-                     <td> ${nic} </td>
-                     <td> ${dob} </td>
-                     <td> ${address} </td>
-                     <td> ${salary} </td>
-                   </tr>`;
-         $("#tblCustomer").append(row);
-
-              bindEvents();
-
+    $("#header").css('display', 'block');
+    $("#homeContent").css('display', 'block');
+    $("#customerContent").css('display', 'none');
+    $("#itemContent").css('display', 'none');
+    $("#orderContent").css('display', 'none');
+    $("#home").click(function () {
+        $("#header").css('display', 'block');
+        $("#homeContent").css('display', 'block');
+        $("#customerContent").css('display', 'none');
+        $("#itemContent").css('display', 'none');
+        $("#orderContent").css('display', 'none');
     });
 
-     function bindEvents() {
-
-         $("#tableCus>tr").click(function () { /*event object eka use karala thamai event ekata adala information ganne thawa this use karala da element ekata adala information gatha haka.*/
-             let id = $(this).children().eq(0).text();
-             let name = $(this).children().eq(1).text();
-             let nic = $(this).children().eq(2).text();
-             let dob = $(this).children().eq(3).text();
-             let address = $(this).children().eq(4).text();
-             let salary = $(this).children().eq(5).text();
-
-
-             $("#customerCode").val(id);
-             $("#customerName").val(name);
-             $("#customerNIC").val(nic);
-             $("#customerDOB").val(dob);
-             $("#customerAddress").val(address);
-             $("#customerSalary").val(salary);
-
-         })
-     }
-
-    // var customerDB=[].empty();
-
-    $("#btnRemove").click(function () {
-        let code=$("#customerCode").val();
-        let consent=confirm("Do you want to Delete?");
-        let response=deleteCustomer(code);
-        if(response){
-            alert("Delete ok");
-        }else{
-            alert("Don't Deleted!!!!!!!!!!!!!");
-        }
-
+    $("#customer").click(function () {
+        $("#header").css('display', 'none');
+        $("#homeContent").css('display', 'none');
+        $("#customerContent").css('display', 'block');
+        $("#itemContent").css('display', 'none');
+        $("#orderContent").css('display', 'none');
     });
 
-    function deleteCustomer() {
-        for(let i=0;i<customerDB.length;i++){
-            if(customerDB[i].id==id){
-                customerDB.splice(i,1);
-                return true;
-            }
-        }
-        return false;
-    }
+    $("#item").click(function () {
+        $("#header").css('display', 'none');
+        $("#homeContent").css('display', 'none');
+        $("#customerContent").css('display', 'none');
+        $("#itemContent").css('display', 'block');
+        $("#orderContent").css('display', 'none');
+    });
 
-
-
-        /*mama native js use karala item save karapu eka*/
-
-    // document.getElementById("saveItem").addEventListener("click", function () {
-    //     let id = document.getElementById("itemCode").value;
-    //     let name = document.getElementById("itemName").value;
-    //     let describe=document.getElementById("itemDescription").value;
-    //     let bPrice=document.getElementById("itemPrice").value;
-    //     let sPrice = document.getElementById("itemSellingPrice").value;
-    //     let qty = document.getElementById("itemQty").value;
-    //     console.log(id,name,describe,bPrice,sPrice,qty);
-    //     let tBody=document.getElementById("tblItem");
-    //     let tr= document.createElement("tr");
-    //     let col1= document.createElement("td");
-    //     let col2= document.createElement("td");
-    //     let col3= document.createElement("td");
-    //     let col4= document.createElement("td");
-    //     let col5= document.createElement("td");
-    //     let col6= document.createElement("td");
-    //     col1.textContent=id;
-    //     col2.textContent=name;
-    //     col3.textContent=describe;
-    //     col4.textContent=bPrice;
-    //     col5.textContent=sPrice;
-    //     col6.textContent=qty;
-    //     tr.appendChild(col1);
-    //     tr.appendChild(col2);
-    //     tr.appendChild(col3);
-    //     tr.appendChild(col4);
-    //     tr.appendChild(col5);
-    //     tr.appendChild(col6);
-    //     tBody.appendChild(tr);
-    // });
-
-    /*object use karal save eka item*/
-
-    var itemDB=[].empty();
-
-        $("#saveItem").click(function () {
-            let code = $("#itemCode").val();
-            let name = $("#itemName").val();
-            let discription = $("#itemDescription").val();
-            let price = $("#itemPrice").val();
-            let sellingPrice = $("#itemSellingPrice").val();
-            let qty = $("#itemQty").val();
-
-     var itemObject = {
-         code:code,
-         name:name,
-         description :description,
-         price : price,
-         sellingPrice : sellingPrice,
-         qty : qty
-    }
-                      itemDBDB.push(itemObject);
-               });
-
-    $("#btn1").click(function () {
-            for(let i=0;i<itemDB.length;i++) {
-                let code2 = itemDB[i].code;
-                let name2 = itemDB[i].name;
-                let description2 = itemDB[i].description;
-                let price2 = itemDB[i].price;
-                let sellingPrice2 = itemDB[i].sellingPrice;
-                let qty2 = itemDB[i].qty;
-
-                let row = `<tr>
-                                 <td> ${code2} </td>
-                                 <td> ${name2} </td>
-                                 <td> ${description2} </td>
-                                <td>  ${price2} </td>
-                                <td> ${sellingPrice2} </td>
-                                <td> ${qty2} </td>
-                         </tr>`;
-
-                $("#tblItem").append(row);
-
-            }
-        });
-
+    $("#order").click(function () {
+        $("#header").css('display', 'none');
+        $("#homeContent").css('display', 'none');
+        $("#customerContent").css('display', 'none');
+        $("#itemContent").css('display', 'none');
+        $("#orderContent").css('display', 'block');
+    });
 
 </script>
 </body>
