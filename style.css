@@ -3115,7 +3115,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
     bottom: 0;
     right: 0;
     margin: auto;
-    background: url("assets/image/loader/loader.gif");
+    background: url("assets/image/loader/qr-scan.gif");
     background-size: cover;
     background-position: center;
 }
