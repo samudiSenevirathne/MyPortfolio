@@ -110,9 +110,10 @@ function saveCustomer() {
 }
 
 function getAllCustomers() {
+    let count = 0;
     //clear all tbody data before add
     $("#tblCustomer").empty();
-
+    $('#cmbCustomers').empty();
     //get all customers
     for (let i = 0; i < customerDB.length; i++) {
         let code = customerDB[i].code;
@@ -122,6 +123,8 @@ function getAllCustomers() {
         let address = customerDB[i].address;
         let salary = customerDB[i].salary;
 
+        $('#cmbCustomers').append(`<option class="options" value="${count}">${code}</option>`);
+        count++;
         let row = `<tr>
                      <td>${code}</td>
                      <td>${name}</td> 
@@ -140,6 +143,7 @@ function getAllCustomers() {
         bindTrEvents();
     }
 }
+
 
 function deleteCustomer(code) {
     for (let i = 0; i < customerDB.length; i++) {

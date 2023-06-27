@@ -446,9 +446,9 @@
     <!--Order-->
     <section class="container mt-5" id="orderContent">
 
-        <button class="btn btn-primary position-relative "  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="background: #6f42c1; color: black; border: 1px solid #6f42c1">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+<!--        <button class="btn btn-primary position-relative "  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="background: #6f42c1; color: black; border: 1px solid #6f42c1">-->
+<!--            <i class="fa-solid fa-bars"></i>-->
+<!--        </button>-->
 
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdropOrder" aria-labelledby="staticBackdropLabel">
             <div class="offcanvas-header">
@@ -473,8 +473,7 @@
             </div>
         </div>
 
-
-        <h1 class="ms-5 position-relative" style="bottom: 62px; left: 10px;">ORDERS</h1>
+<!--        <h1 class="ms-5 position-relative" style="bottom: 62px; left: 10px;">ORDERS</h1>-->
         <section class="row position-relative" style="top:-84px">
 
             <div class="row col-sm-12 col-12 col-lg-5 mt-5 ms-3 col-xl-4">
@@ -482,24 +481,21 @@
 
                 <div class="col-6">
                     <div class="form-floating input-group mt-1 ">
-                        <input type="text" class="form-control bg-transparent " id="invoiceID" placeholder="O00-001">
+                        <input  type="text" class="form-control bg-transparent " id="invoiceID" placeholder="O00-001">
                         <label for="invoiceID">Invoice ID</label>
                     </div>
                 </div>
 
                 <div class="col-6">
                     <div class="form-floating input-group mt-1 ">
-                        <input type="date" class="form-control bg-transparent " id="floatingInputOrder">
+                        <input  type="date" class="form-control bg-transparent " id="floatingInputOrder">
                         <label for="floatingInputOrder">Invoice Date</label>
                     </div>
                 </div>
 
                 <div class=" col-6 mt-4 mb-5 ">
-                    <select class="form-select bg-transparent " aria-label="Default select example">
+                    <select id="cmbCustomers" class="form-select bg-transparent " aria-label="Default select example">
                         <option selected class="col-6">Customer</option>
-                        <option value="1">C00-001</option>
-                        <option value="2">C00-002</option>
-                        <option value="3">C00-003</option>
                     </select>
                 </div>
 
@@ -522,11 +518,8 @@
             <div class="row col-sm-12 col-12 col-lg-5 mt-5 ms-3 col-xl-4 justify-content-end">
                 <h4 class="rounded-3 p-2 bg-opacity-25 bg-success" style="border: 1px solid black; height: max-content; margin: 0;">Select Items</h4>
                 <div class=" col-6 mt-4 mb-5 ">
-                    <select class="form-select bg-transparent " aria-label="Default select example">
+                    <select  id="cmbItems" class="form-select bg-transparent " aria-label="Default select example">
                         <option selected class="col-6">Item</option>
-                        <option value="1">I00-001</option>
-                        <option value="2">I00-002</option>
-                        <option value="3">I00-003</option>
                     </select>
                 </div>
                 <div class="col-6">
@@ -557,12 +550,22 @@
                         <label for="QtyOnHand">Qty On Hand</label>
                     </div>
                 </div>
-                <button type="button" class="btn btn-success col-4 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModalOrder">Add To Cart</button>
+
+                <div class="col-6">
+                    <div class="form-floating input-group mt-1 ">
+                        <input id="txtOQty" type="text" class="form-control bg-transparent " placeholder="10">
+                        <label for="txtOQty">Qty</label>
+                    </div>
+                </div>
+
+                <button id="btnOrderClear"  type="button" class="btn btn-secondary col-3 mt-3 me-3">Clear</button>
+                <button id="btnAddToCart" disabled="true" type="button" class="btn btn-success col-4 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModalOrder">Add To Cart</button>
+
             </div>
 
             <div class="row col-sm-12  col-lg-6 col-xl-3 justify-content-center align-items-center ms-3 position-relative" style="top: 40px;">
-                <h4 class="col-5">Sub-Total:</h4>
-                <h4 class="col-5 text-danger text-start">100,000/=</h4>
+                <h4 class="col-5">Total:</h4>
+                <h4 id="lblTotal" class="col-5 text-danger text-start"></h4>
 
                 <div class="col-12">
                     <div class="form-floating input-group">
@@ -578,20 +581,20 @@
                     </div>
                 </div>
 
-                <h4 class="col-5">Total:</h4>
-                <h4 class="col-5 text-danger text-start">99,000/=</h4>
+                <h4 class="col-5">Sub-Total:</h4>
+                <h4 id="lblSubTotal" class="col-5 text-danger text-start"></h4>
 
                 <h4 class="col-5">Balance:</h4>
-                <h4 class="col-5 text-danger text-success">1,000/=</h4>
+                <h4 id="lblBalance" class="col-5 text-danger text-success"></h4>
 
-                <button type="button" class="btn btn-dark col-10 " data-bs-toggle="modal" data-bs-target="#exampleModall">Place Order</button>
+                <button id="btnPlaceOrder" type="button" class="btn btn-dark col-10 " data-bs-toggle="modal" data-bs-target="#exampleModall">Place Order</button>
             </div>
         </section>
 
         <section class="row mt-sm-2 position-relative mt-sm-2 " style="top:-100px; height: 10%">
 
             <div class="col-12 mt-5 overflow-y-scroll">
-                <table class="table mt-3 table-hover">
+                <table id="orderTable" class="table mt-3 table-hover">
                     <thead class="" style="border-radius: 5px; background-color:#905FCA;">
                     <tr>
                         <th scope="col">#</th>
@@ -624,6 +627,9 @@
 <script src="model/Item.js"></script>
 <script src="controller/ItemController.js"></script>
 <script src="controller/validations/ItemValidations.js"></script>
+<script src="model/Order.js"></script>
+<script src="model/OrderDetails.js"></script>
+<script src="controller/OrderController.js"></script>
 
 </body>
 

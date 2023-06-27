@@ -105,8 +105,10 @@ function saveItem() {
 }
 
 function getAllItems() {
+    let count = 0;
     //clear all tbody data before add
     $("#tblItem").empty();
+    $('#cmbItems').empty();
 
     //get all items
     for (let i = 0; i < itemDB.length; i++) {
@@ -116,6 +118,9 @@ function getAllItems() {
         let buyPrice = itemDB[i].buyingPrice;
         let sellPrice = itemDB[i].sellingPrice;
         let qty = itemDB[i].qty;
+
+        $('#cmbItems').append(`<option class="options" value="${count}">${code}</option>`);
+        count++;
 
         let row = `<tr>
                       <td>${code}</td>
@@ -135,6 +140,7 @@ function getAllItems() {
         bindItemTrEvents();
     }
 }
+
 
 function deleteItem(code) {
     for (let i = 0; i < itemDB.length; i++) {

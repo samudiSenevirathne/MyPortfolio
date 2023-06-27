@@ -27,4 +27,5 @@ var itemDB = [
     {code:"I00-003",name:"byte",description:"Smak",buyingPrice: 145,sellingPrice: 145,qty: 100}
 ];
 
-var orderDB = [];
+var orders = [];
+var orderDetails=[];
