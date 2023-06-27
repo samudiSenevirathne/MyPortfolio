@@ -590,3 +590,6 @@ $("#btn4").click(function () {
     $("#imgjava").attr('src','assets/image/MY%20Mock-Up%20Images/java-logo%201%20(traced).png');
 });
 
+$(window).on('load', function () {
+    $("#loader").css('display', 'none');
+});

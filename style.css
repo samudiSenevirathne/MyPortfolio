@@ -3094,6 +3094,33 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
     }
 
 
+#loader {
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #f9f5f1;
+}
+
+#loader > div {
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: url("assets/image/loader/loader.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+
 @media all and (min-width:318px) and (max-width:320px){
 
     body{
