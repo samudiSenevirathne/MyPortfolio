@@ -9,6 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
   <style>
 
     ::-webkit-scrollbar {
@@ -16,12 +20,47 @@
     }
 
     body {
-      background-color: #9980FA;
+      background-color:#9980FA;
       height: 100vh;
+      width:100vw;
+    }
+
+    section {
+      width: 100%;
+      height: 600px;
+    }
+
+    header > nav > div > a {
+      font-family: 'Dancing Script', cursive;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 70px !important;
+      line-height: 70px;
+      text-align: right;
+      width: 300px;
+      height: max-content;
+      color: #000000;
+    }
+
+    header > nav > div > ul > li > a {
+      text-decoration: none;
+      color: #000000 !important;
+    }
+
+    header > nav > div > ul > li {
+      font-family: 'Dancing Script', cursive;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      color: #000000 !important;
+    }
+
+    header > nav > div > ul > li > a > i {
+      padding-right: 30px;
     }
 
     * {
-      font-family: 'Inter', sans-serif;
+      /*font-family: 'Inter', sans-serif;*/
       font-style: normal;
       font-weight: 600;
 
@@ -37,37 +76,33 @@
 </head>
 <body>
 
-<main class="container mt-5">
 
-  <button class="btn btn-primary position-relative "  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="background: #6f42c1; color: black; border: 1px solid #6f42c1">
-    <i class="fa-solid fa-bars"></i>
-  </button>
-
-  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="staticBackdropLabel">Menu</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <ul class="nav flex-column">
+<header  class="position-relative top-0 justify-content-sm-center">
+  <nav class="navbar"  style="background:#9980FA">
+    <!-- Navbar-->
+    <div class="container  justify-content-sm-center">
+      <a id="posName" class="navbar-brand m-sm-5 text-sm-center text-wrap position-relative start-0 text-xl-end" href="#" style="left:-160px!important;">ORDER</a>
+      <ul style=" position:relative;left:-13px" class="nav justify-content-end justify-content-sm-center me-5">
         <li class="nav-item">
-          <a class="nav-link "  href="../index.html">Home</a>
+          <a class="nav-link "  href="../index.html"><i class="fa-solid fa-house"></i>Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="customers.html">Customers</a>
+          <a class="nav-link"  href ="customers.html"><i class="fa-solid fa-user"></i>Customers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="item.html">Items</a>
+          <a class="nav-link" href="item.html"><i class="fa-solid fa-box"></i>Items</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="orders.html">Order</a>
+          <a class="nav-link active" aria-current="page" href="orders.html"><i class="fa-solid fa-cart-shopping"></i>Orders</a>
         </li>
       </ul>
     </div>
-  </div>
+    </div>
+  </nav>
+</header>
 
+<main class="container mt-5">
 
-  <h1 class="ms-5 position-relative" style="bottom: 43px; left: 10px;">ORDERS</h1>
   <section class="row position-relative" style="top:-73px">
 
     <div class="row col-sm-12 col-12 col-lg-5 mt-5 ms-3 col-xl-4">
@@ -150,6 +185,15 @@
           <label for="QtyOnHand">Qty On Hand</label>
         </div>
       </div>
+
+      <div class="col-6">
+        <div class="form-floating input-group mt-1 ">
+          <input id="txtOQty" type="text" class="form-control bg-transparent " placeholder="10">
+          <label for="txtOQty">Qty</label>
+        </div>
+      </div>
+
+      <button id="btnOrderClear"  type="button" class="btn btn-secondary col-3 mt-3 me-3">Clear</button>
       <button type="button" class="btn btn-success col-4 mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Add To Cart</button>
     </div>
 
@@ -187,7 +231,6 @@
       <table class="table mt-3 table-hover">
         <thead class="" style="border-radius: 5px; background-color:#905FCA;">
         <tr>
-          <th scope="col">#</th>
           <th scope="col">Item Code</th>
           <th scope="col">Item Name</th>
           <th scope="col">Item Description</th>
@@ -199,67 +242,61 @@
         </thead>
         <tbody>
         <tr>
-          <th scope="row">1</th>
           <td>I00-001</td>
           <td>Sample Item</td>
           <td>Sample Description</td>
           <td>5000/=</td>
           <td>5</td>
           <td>25,000/=</td>
-          <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #905FCA">Remove</button></td>
+          <td> <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: #905FCA">Remove</button></td>
         </tr>
         <tr>
-          <th scope="row">2</th>
           <td>I00-002</td>
           <td>Sample Item</td>
           <td>Sample Description</td>
           <td>5000/=</td>
           <td>5</td>
           <td>25,000/=</td>
-          <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color: #905FCA">Remove</button></td>
+          <td> <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color: #905FCA">Remove</button></td>
         </tr>
         <tr>
-          <th scope="row">3</th>
           <td>I00-003</td>
           <td>Sample Item</td>
           <td>Sample Description</td>
           <td>5000/=</td>
           <td>5</td>
           <td>25,000/=</td>
-          <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color: #905FCA">Remove</button></td>
+          <td> <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color: #905FCA">Remove</button></td>
         </tr>
 
         <tr>
-          <th scope="row">4</th>
           <td>I00-004</td>
           <td>Sample Item</td>
           <td>Sample Description</td>
           <td>5000/=</td>
           <td>5</td>
           <td>25,000/=</td>
-          <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color: #905FCA">Remove</button></td>
+          <td> <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color: #905FCA">Remove</button></td>
         </tr>
 
         <tr>
-          <th scope="row">5</th>
           <td>I00-005</td>
           <td>Sample Item</td>
           <td>Sample Description</td>
           <td>5000/=</td>
           <td>5</td>
           <td>25,000/=</td>
-          <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color: #905FCA">Remove</button></td>
+          <td> <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color: #905FCA">Remove</button></td>
         </tr>
 
         <tr>
-          <th scope="row">6</th>
           <td>I00-006</td>
           <td>Sample Item</td>
           <td>Sample Description</td>
           <td>5000/=</td>
           <td>5</td>
           <td>25,000/=</td>
-          <td> <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color: #905FCA">Remove</button></td>
+          <td> <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal"style="background-color: #905FCA">Remove</button></td>
         </tr>
         </tbody>
       </table>

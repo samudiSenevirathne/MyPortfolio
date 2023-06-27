@@ -80,7 +80,7 @@ function loadCartItems() {
                     <td>${od.qty}</td>
                     <td>${od.cost}</td>
                     <td>
-                        <button type="button" class="btn btn-danger btnRemoveFromCart">Remove</button>
+                        <button type="button" class="btn btn-outline-dark btnRemoveFromCart">Remove</button>
                     </td> </tr>`;
 
         itemTable.append(row);
