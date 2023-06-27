@@ -20,3 +20,11 @@ GitHub Pages :https://samudisenevirathne.github.io/MyPortfolio/ <br>
  WireFrame : https://app.diagrams.net/#G1ji7vkkiig8ORyskZHKlUsQTMl7ECR1g3#%7B%22pageId%22%3A%227iUHQ8D1I0VkcJRVQDb2%22%7D <br>
  Mockup : https://www.figma.com/file/9B1vxX5kh7yYBePuwAnrul/Mock-up?type=design&node-id=538-16&mode=design&t=u7iklYHGST6Qh8f0-0 <br>
 <h3>Developed By Samudi Senevirathne</h3>
+
+Desktop View
+
+![Desktop - view](https://github.com/samudiSenevirathne/MyPortfolio/assets/121780214/35e398e3-4e37-498f-a2e9-fc669331d890)
+
+
+
+
