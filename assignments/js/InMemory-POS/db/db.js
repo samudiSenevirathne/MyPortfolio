@@ -16,9 +16,9 @@
 // orderDetails=[];
 
 var customerDB =  [
-    {code: "C00-001", name: "Samudi",nic:"200056255249",dob:"03/08/2000", address: "Matara", salary: 100000},
-    {code: "C00-002", name: "Maheshi",nic:"199954646461",dob:"06/19/1999", address: "Ahangama", salary: 200000},
-    {code: "C00-003", name: "Thithekshaya",nic:"200165652656",dob:"03/01/2001", address: "Colombo", salary: 300000}
+    {code: "C00-001", name: "Samudi",nic:"200056255249",dob:"2000-03-08", address: "Matara", salary: 100000},
+    {code: "C00-002", name: "Maheshi",nic:"199954646461",dob:"1999-06-19", address: "Ahangama", salary: 200000},
+    {code: "C00-003", name: "Thithekshaya",nic:"200165652656",dob:"2001-03-01", address: "Colombo", salary: 300000}
 ];
 
 var itemDB = [
