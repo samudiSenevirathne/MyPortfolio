@@ -23,7 +23,11 @@ GitHub Pages :https://samudisenevirathne.github.io/MyPortfolio/ <br>
 
 Desktop View
 
-![Desktop - view](https://github.com/samudiSenevirathne/MyPortfolio/assets/121780214/35e398e3-4e37-498f-a2e9-fc669331d890)
+![Desktop - view (1)](https://github.com/samudiSenevirathne/MyPortfolio/assets/121780214/fa3f5c4e-6c8c-410d-b0ba-bae7f88ed2cb)
+
+![pos](https://github.com/samudiSenevirathne/MyPortfolio/assets/121780214/f13bb77c-f105-4967-b797-dfd318895eed)
+
+
 
 
 
