@@ -3104,6 +3104,7 @@ main > section:nth-child(5) > section > section > article:nth-child(3) {
     bottom: 0;
     right: 0;
     background: #f9f5f1;
+    z-index:20;
 }
 
 #loader > div {
